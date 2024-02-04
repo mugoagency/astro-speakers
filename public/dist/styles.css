@@ -588,12 +588,12 @@ video {
   position: absolute;
 }
 
-.-top-full {
-  top: -100%;
+.-top-3\/4 {
+  top: -75%;
 }
 
-.left-1\/2 {
-  left: 50%;
+.left-3\/4 {
+  left: 75%;
 }
 
 .m-8 {
@@ -603,6 +603,10 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mt-12 {
@@ -710,19 +714,19 @@ video {
   padding: 1rem;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-.px-3\.5 {
-  padding-left: 0.875rem;
-  padding-right: 0.875rem;
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
 }
 
-.py-px {
-  padding-top: 1px;
-  padding-bottom: 1px;
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .text-center {
