@@ -10,11 +10,67 @@
   </head>
 
   <body>
-    <h1
+    <header>
+      <div class="container">
+        <div
+          class="flex justify-between items-center m-8 xl:m-0 sm:mt-8 xl:mt-8"
+        >
+          <a href="/">
+            <img src="/src/images/AstroSpeakersLogo.svg" alt="Logo Image" />
+          </a>
+
+          <nav class="desktop-nav flex items-center gap-12">
+            <a href="#">Organistations</a>
+            <a href="#">Lectures</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+            <a href="#">
+              <div class="heart">
+                <div
+                  class="absolute -top-full left-1/2 p-4 rounded-full py-px px-3.5 text-transparent text-black"
+                >
+                  2
+                </div>
+                <img
+                  class="transform scale-125"
+                  src="/src/images/Heart.svg"
+                  alt="Heart Image"
+                />
+              </div>
+            </a>
+            <a href="#" class="btn btn-primary">Join Now</a>
+          </nav>
+
+          <nav class="mobile-nav flex items-center gap-6">
+            <a href="#">
+              <div class="heart">
+                <div
+                  class="absolute -top-full left-1/2 p-4 rounded-full py-px px-3.5 text-transparent text-black"
+                >
+                  2
+                </div>
+                <img
+                  class="transform scale-125"
+                  src="/src/images/Heart.svg"
+                  alt="Heart Image"
+                />
+              </div>
+            </a>
+            <a href="#">Search Icon</a>
+            <a href="#"
+              ><img src="/src/images/MobileMenu.svg" alt="Menu Icon"
+            /></a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- <h1
       class="font-bold text-3xl text-center max-w-2xl mx-auto mt-12 bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent"
     >
       Hello Max Parker! If you see a beautiful gradient on this text, Tailwind
       CSS is successfully installed and setup
-    </h1>
+    </h1> -->
   </body>
 </html>

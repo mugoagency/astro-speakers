@@ -13,8 +13,13 @@
 }
 
 body {
-  background-color: var(--primary-color);
+  background: var(--navy-color);
   font-family: "Lab Grotesque", sans-serif !important;
+}
+
+body,
+html {
+  font-size: 62.5%;
 }
 
 /* Fonts */
@@ -96,4 +101,42 @@ h4 {
 
 .btn-plain:hover {
   text-decoration: underline;
+}
+
+/* Containers */
+.container {
+  max-width: 1316px !important;
+  margin: 0 auto;
+}
+
+/* Header */
+
+nav a {
+  color: var(--white-color);
+  font-size: 1.4rem !important;
+  font-weight: 400;
+}
+
+.desktop-nav {
+  display: none;
+
+  @media (min-width: 640px) {
+    display: flex;
+  }
+}
+
+.mobile-nav {
+  display: flex;
+
+  @media (min-width: 640px) {
+    display: none;
+  }
+}
+
+.heart {
+  position: relative;
+}
+
+.heart div {
+  background-color: var(--white-color);
 }
