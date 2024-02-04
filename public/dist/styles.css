@@ -862,6 +862,18 @@ h4 {
   text-decoration: underline;
 }
 
+.link {
+  transition: all 0.3s;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:active {
+  text-decoration: underline;
+}
+
 /* Containers */
 
 .container {
