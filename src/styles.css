@@ -14,7 +14,11 @@
 
 body {
   background-color: var(--primary-color);
+  font-family: "Lab Grotesque", sans-serif !important;
 }
+
+/* Fonts */
+@import url(https://db.onlinewebfonts.com/c/5f4cf05e3d14b070a09eff0243790d58?family=Lab+Grotesque);
 
 /* Typography */
 
