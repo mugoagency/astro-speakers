@@ -81,6 +81,7 @@ p {
   border-radius: 50rem;
   cursor: pointer;
   transition: all 0.3s;
+  font-size: 1.4rem;
 }
 
 .btn-primary {

@@ -608,6 +608,11 @@ video {
   margin: 2rem;
 }
 
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -616,6 +621,11 @@ video {
 .my-0 {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .mt-3 {
@@ -636,6 +646,10 @@ video {
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .mb-16 {
@@ -672,6 +686,10 @@ video {
 
 .w-24 {
   width: 6rem;
+}
+
+.w-9\/12 {
+  width: 75%;
 }
 
 .w-10\/12 {
@@ -769,6 +787,10 @@ video {
   gap: 3rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -841,6 +863,11 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .pb-10 {
@@ -957,6 +984,7 @@ p {
   border-radius: 50rem;
   cursor: pointer;
   transition: all 0.3s;
+  font-size: 1.4rem;
 }
 
 .btn-primary {
@@ -1033,6 +1061,10 @@ nav a {
 /* Footer */
 
 @media (min-width: 640px) {
+  .sm\:m-0 {
+    margin: 0px;
+  }
+
   .sm\:mt-8 {
     margin-top: 2rem;
   }
