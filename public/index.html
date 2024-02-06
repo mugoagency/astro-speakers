@@ -71,12 +71,12 @@
     <footer>
       <div class="container">
         <div
-          class="footer grid w-full grid-cols-4 flex-row justify-center gap-5 pt-24 pb-24"
+          class="footer grid w-full px-8 sm:grid-cols-4 sm:gap-5 sm:pt-24 sm:pb-24"
         >
-          <div class="flex flex-col gap-12">
+          <div class="hidden sm:flex sm:flex-col sm:gap-12">
             <h4 class="bold text-white">About Us</h4>
 
-            <div class="flex flex-col gap-6">
+            <div class="hidden sm:flex sm:flex-col sm:gap-6">
               <a href="#"><p>Astro Speakers UK</p></a>
               <a href="#"><p>Astro Societies UK</p></a>
               <a href="#"><p>Astro Speakers World</p></a>
@@ -86,7 +86,7 @@
             </div>
           </div>
 
-          <div class="flex flex-col gap-12">
+          <div class="hidden sm:flex sm:flex-col sm:gap-12">
             <h4 class="bold text-white">Who Are You Looking For?</h4>
 
             <div class="flex flex-col gap-6">
@@ -99,7 +99,7 @@
             </div>
           </div>
 
-          <div class="flex flex-col gap-12">
+          <div class="hidden sm:flex sm:flex-col sm:gap-12">
             <h4 class="bold text-white">Diary of Upcoming Events</h4>
 
             <div class="flex flex-col gap-10 mr-8">
@@ -152,12 +152,12 @@
             </div>
           </div>
 
-          <div class="flex flex-col gap-12">
+          <div class="flex flex-col gap-12 mb-16 sm:mb-0">
             <a href="/">
               <img src="/src/images/AstroSpeakersLogo.svg" alt="Logo Image" />
             </a>
 
-            <div class="flex flex-col gap-12 mr-4">
+            <div class="flex flex-col gap-12 mr-4 w-10/12 sm:w-full">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
                 mattis ligula. In hac habitasse platea dictumst.
@@ -206,6 +206,38 @@
                 </a>
               </div>
             </div>
+          </div>
+
+          <div class="sm:hidden flex flex-col gap-8 pb-16">
+            <details class="border-b border-navy pb-10 mr-4">
+              <summary>
+                <h4 class="text-white">About Us</h4>
+              </summary>
+
+              <div class="mt-4">
+                <p>About Us Dropdown Text Here</p>
+              </div>
+            </details>
+
+            <details class="border-b border-navy pb-10 mr-4">
+              <summary>
+                <h4 class="text-white">Who Are You Looking For?</h4>
+              </summary>
+
+              <div class="mt-4">
+                <p>Who Are You Looking For? Dropdown Text Here</p>
+              </div>
+            </details>
+
+            <details class="border-b border-navy pb-10 mr-4">
+              <summary>
+                <h4 class="text-white">Diary of Upcoming Events</h4>
+              </summary>
+
+              <div class="mt-4">
+                <p>Diary of Upcoming Events Dropdown Text Here</p>
+              </div>
+            </details>
           </div>
         </div>
       </div>
