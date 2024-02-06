@@ -780,6 +780,11 @@ video {
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
+.bg-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgba(14, 23, 33, var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -812,13 +817,25 @@ video {
   padding-bottom: 0px;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+
+.pb-40 {
+  padding-bottom: 10rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-transparent {
@@ -960,7 +977,7 @@ p {
 }
 
 .link:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .link:active {
