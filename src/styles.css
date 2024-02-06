@@ -10,10 +10,14 @@
   --dark-color: #0e1721;
   --navy-color: #16293f;
   --grey-color: #a3b5c6;
+
+  /* Linear Gradients Colours */
+  --lightblue--color: #85c1fc;
+  --darkblue--color: #5f7ff0;
 }
 
 body {
-  background: var(--navy-color);
+  background: var(--black-color);
   font-family: "Lab Grotesque", sans-serif !important;
 }
 
@@ -149,10 +153,6 @@ nav a {
   @media (min-width: 640px) {
     display: none;
   }
-}
-
-.heart div {
-  background-color: var(--white-color);
 }
 
 /* Footer */
