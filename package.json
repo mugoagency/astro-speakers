@@ -1,16 +1,12 @@
 {
-  "name": "tailwind-css-starter-postcss",
+  "name": "astro-speakers",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "author": "Mugo Agency",
   "scripts": {
-    "push": "postcss ./src/styles.css -o ./public/dist/styles.css",
-    "watch": "onchange 'tailwind.config.js' './public/**/*.html' './src/**/*.css' -- npm run push",
-    "build": "NODE_ENV=production postcss ./src/styles.css -o ./public/dist/styles.css"
+    "push": "postcss ./styles/*.css --base styles --dir ./public/styles/",
+    "watch": "onchange 'tailwind.config.js' './public/**/*.html' './styles/*.css' -- npm run push",
+    "build": "NODE_ENV=production postcss ./styles/*.css --base styles --dir ./public/styles/"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.2.1",
     "caniuse-lite": "^1.0.30001585",

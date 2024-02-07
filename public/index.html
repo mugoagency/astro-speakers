@@ -1,22 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#5e7ef0">
 
     <title>Tailwind CSS Starter</title>
 
-    <link rel="stylesheet" href="dist/styles.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
   </head>
 
   <body>
-    <header>
+    <header class="header py-8">
       <div class="container">
-        <div
-          class="flex justify-between items-center m-8 xl:m-0 sm:mt-8 xl:mt-8"
-        >
+        <div class="flex justify-between items-center m-8 xl:m-0">
           <a href="/">
-            <img src="/dist/images/AstroSpeakersLogo.svg" alt="Logo Image" />
+            <img src="images/logo.svg" alt="Astro Speakers" />
           </a>
 
           <nav class="desktop-nav flex items-center gap-12">
@@ -26,18 +27,13 @@
             <a class="link" href="#">Contact</a>
             <a class="link" href="#">Login</a>
             <a class="link" href="#">
-              <div class="heart relative mt-3">
-                <div
-                  class="absolute -top-3/4 left-3/4 p-4 rounded-full py-0 px-2.5 text-transparent text-black bg-white"
-                >
+              <span class="heart relative mt-3">
+                <span class="absolute -top-3/4 left-3/4 p-4 rounded-full py-0 px-2.5 text-transparent text-black bg-white">
                   2
-                </div>
-                <img
-                  class="transform scale-125"
-                  src="/dist/images/Heart.svg"
-                  alt="Heart Image"
-                />
-              </div>
+                </span>
+
+                <img class="transform scale-125" src="images/heart.svg" alt="Heart Image" />
+              </span>
             </a>
             <a href="#" class="btn btn-primary">Join Now</a>
           </nav>
@@ -45,52 +41,51 @@
           <nav class="mobile-nav flex items-center gap-6">
             <a class="link" href="#">
               <div class="heart relative mt-3">
-                <div
-                  class="absolute -top-3/4 left-3/4 p-4 rounded-full py-0 px-2.5 text-transparent text-black bg-white"
-                >
+                <div class="absolute -top-3/4 left-3/4 p-4 rounded-full py-0 px-2.5 text-transparent text-black bg-white">
                   2
                 </div>
-                <img
-                  class="transform scale-125"
-                  src="/dist/images/Heart.svg"
-                  alt="Heart Image"
-                />
+
+                <img class="transform scale-125" src="images/Heart.svg" alt="Heart Image" />
               </div>
             </a>
             <a class="link" href="#">Search Icon</a>
-            <a class="link" href="#"
-              ><img src="/dist/images/MobileMenu.svg" alt="Menu Icon"
-            /></a>
+            <a class="link" href="#">
+              <img src="images/mobile-menu.svg" alt="Menu Icon"/>
+            </a>
           </nav>
         </div>
       </div>
     </header>
 
-    <main style="height: 60vh">
-      <section id="AstroSpeakerJoinNow" class="my-16">
-        <div class="container">
-          <div
-            class="flex flex-col justify-center items-center gap-4 bg-gradient-to-b from-lightblue to-darkblue py-16 rounded-2xl mx-6 sm:m-0"
-          >
-            <h2 class="text-white text-center w-9/12 sm:w-full">
-              Interested In Becoming An Astro Speaker?
-            </h2>
-            <p class="text-white text-center w-9/12 sm:w-full mb-6">
-              Lorem ipsum dolor sit amet onsectetur adipiscing elit
-            </p>
-            <a href="#" class="btn btn-white">Join Now</a>
-          </div>
-        </div>
-      </section>
+    <main class="main py-16">
+      <div class="container">
+        <h1 class="text-white">
+          Heading
+        </h1>
+      </div>
     </main>
 
-    <footer>
+    <footer class="footer pt-16">
       <div class="container">
-        <div
-          class="footer grid w-full px-8 sm:grid-cols-4 sm:gap-5 sm:pt-24 sm:pb-24"
-        >
+        <div class="join-component flex flex-col justify-center items-center gap-4 bg-gradient-to-b from-lightblue to-darkblue py-16 rounded-2xl mx-6 sm:m-0">
+          <h2 class="text-white text-center w-9/12 sm:w-full">
+            Interested In Becoming An Astro Speaker?
+          </h2>
+
+          <p class="text-white text-center w-9/12 sm:w-full mb-6">
+            Lorem ipsum dolor sit amet onsectetur adipiscing elit
+          </p>
+
+          <a href="#" class="btn btn-white">
+            Join Now
+          </a>
+        </div>
+
+        <div class="grid w-full sm:grid-cols-4 sm:gap-5 sm:pt-24 sm:pb-24">
           <div class="hidden sm:flex sm:flex-col sm:gap-12">
-            <h4 class="bold text-white">About Us</h4>
+            <h4 class="bold text-white">
+              About Us
+            </h4>
 
             <div class="hidden sm:flex sm:flex-col sm:gap-6">
               <a href="#"><p>Astro Speakers UK</p></a>
@@ -103,7 +98,9 @@
           </div>
 
           <div class="hidden sm:flex sm:flex-col sm:gap-12">
-            <h4 class="bold text-white">Who Are You Looking For?</h4>
+            <h4 class="bold text-white">
+              Who Are You Looking For?
+            </h4>
 
             <div class="flex flex-col gap-6">
               <a href="#"><p>Speakers</p></a>
@@ -116,48 +113,41 @@
           </div>
 
           <div class="hidden sm:flex sm:flex-col sm:gap-12">
-            <h4 class="bold text-white">Diary of Upcoming Events</h4>
+            <h4 class="bold text-white">
+              Diary of Upcoming Events
+            </h4>
 
             <div class="flex flex-col gap-10 mr-8">
-              <div
-                class="flex flex-row items-center gap-6 border-b border-navy pb-10"
-              >
-                <div
-                  class="flex flex-col items-center justify-center rounded-full h-24 w-24 gap-1/2 bg-gradient-to-b from-lightblue to-darkblue"
-                >
+              <div class="flex flex-row items-center gap-6 border-b border-navy pb-10">
+                <div class="flex flex-col items-center justify-center rounded-full h-24 w-24 gap-1/2 bg-gradient-to-b from-lightblue to-darkblue">
                   <p class="text-black">22</p>
                   <p class="text-black">Sep</p>
                 </div>
+
                 <div>
                   <p class="text-white mb-2">Event Name Here</p>
                   <p>Date | Location | Time</p>
                 </div>
               </div>
 
-              <div
-                class="flex flex-row items-center gap-6 border-b border-navy pb-10"
-              >
-                <div
-                  class="flex flex-col items-center justify-center rounded-full h-24 w-24 gap-1/2 bg-gradient-to-b from-lightblue to-darkblue"
-                >
+              <div class="flex flex-row items-center gap-6 border-b border-navy pb-10">
+                <div class="flex flex-col items-center justify-center rounded-full h-24 w-24 gap-1/2 bg-gradient-to-b from-lightblue to-darkblue">
                   <p class="text-black">16</p>
                   <p class="text-black">Aug</p>
                 </div>
+
                 <div>
                   <p class="text-white mb-2">Event Name Here</p>
                   <p>Date | Location | Time</p>
                 </div>
               </div>
 
-              <div
-                class="flex flex-row items-center gap-6 border-b border-navy pb-10"
-              >
-                <div
-                  class="flex flex-col items-center justify-center rounded-full h-24 w-24 gap-1/2 bg-gradient-to-b from-lightblue to-darkblue"
-                >
+              <div class="flex flex-row items-center gap-6 border-b border-navy pb-10">
+                <div class="flex flex-col items-center justify-center rounded-full h-24 w-24 gap-1/2 bg-gradient-to-b from-lightblue to-darkblue">
                   <p class="text-black">01</p>
                   <p class="text-black">Jul</p>
                 </div>
+
                 <div>
                   <p class="text-white mb-2">Event Name Here</p>
                   <p>Date | Location | Time</p>
@@ -170,7 +160,7 @@
 
           <div class="flex flex-col gap-12 mb-16 sm:mb-0">
             <a href="/">
-              <img src="/src/images/AstroSpeakersLogo.svg" alt="Logo Image" />
+              <img src="images/logo.svg" alt="Logo Image" />
             </a>
 
             <div class="flex flex-col gap-12 mr-4 w-10/12 sm:w-full">
@@ -180,45 +170,20 @@
               </p>
 
               <div class="flex flex-row gap-4">
-                <a
-                  class="border border-white h-16 w-16 rounded-full flex items-center"
-                  href="#"
-                >
-                  <img
-                    class="my-0 mx-auto"
-                    src="/src/images/facebook.svg"
-                    alt="Facebook"
-                  />
+                <a class="border border-white h-16 w-16 rounded-full flex items-center" href="#">
+                  <img class="my-0 mx-auto" src="images/facebook.svg" alt="Facebook" />
                 </a>
-                <a
-                  class="border border-white h-16 w-16 rounded-full flex items-center"
-                  href="#"
-                >
-                  <img
-                    class="my-0 mx-auto"
-                    src="/src/images/youtube.svg"
-                    alt="Youtube"
-                  />
+
+                <a class="border border-white h-16 w-16 rounded-full flex items-center" href="#">
+                  <img class="my-0 mx-auto" src="images/youtube.svg" alt="Youtube" />
                 </a>
-                <a
-                  class="border border-white h-16 w-16 rounded-full flex items-center"
-                  href="#"
-                >
-                  <img
-                    class="my-0 mx-auto"
-                    src="/src/images/instagram.svg"
-                    alt="Instagram"
-                  />
+
+                <a class="border border-white h-16 w-16 rounded-full flex items-center" href="#">
+                  <img class="my-0 mx-auto" src="images/instagram.svg" alt="Instagram" />
                 </a>
-                <a
-                  class="border border-white h-16 w-16 rounded-full flex items-center"
-                  href="#"
-                >
-                  <img
-                    class="my-0 mx-auto"
-                    src="/src/images/pinterest.svg"
-                    alt="Pinterest"
-                  />
+
+                <a class="border border-white h-16 w-16 rounded-full flex items-center" href="#">
+                  <img class="my-0 mx-auto" src="images/pinterest.svg" alt="Pinterest" />
                 </a>
               </div>
             </div>
@@ -258,16 +223,12 @@
         </div>
       </div>
 
-      <img
-        class="my-0 mx-auto w-full"
-        src="/src/images/AstroSpeakersFooter.svg"
-        alt="Pinterest"
-      />
+      <img class="my-0 mx-auto w-full" src="images/logo-text.svg" alt="Astro Speakers" />
 
       <div class="copyright bg-dark py-8">
         <div class="container">
           <p class="text-center">
-            Copyright &copy; AstroSpeakers.Org <span>2023</span>
+            Copyright &copy; AstroSpeakers.Org 2024
           </p>
         </div>
       </div>
