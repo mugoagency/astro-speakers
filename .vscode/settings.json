@@ -1,0 +1,18 @@
+{
+	"search.exclude": {
+		"**/public/styles/": true,
+		".git": true,
+		".gitignore": true
+	},
+	"editor.tabSize": 2,
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"files.exclude": {
+		"**/node_modules": true,
+		"**/.DS_Store": true,
+		"**/.git": true,
+		"**/.gitignore": true,
+		"**/package-lock.json": true
+	}
+}
