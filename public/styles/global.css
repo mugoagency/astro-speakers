@@ -640,6 +640,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mt-12 {
   margin-top: 3rem;
 }
@@ -666,6 +670,10 @@ video {
 
 .mb-16 {
   margin-bottom: 4rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
 }
 
 .inline-block {
@@ -858,6 +866,11 @@ video {
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
+.bg-red {
+  --tw-bg-opacity: 1;
+  background-color: rgba(247, 9, 9, var(--tw-bg-opacity));
+}
+
 .bg-green {
   --tw-bg-opacity: 1;
   background-color: rgba(28, 247, 9, var(--tw-bg-opacity));
@@ -892,6 +905,11 @@ video {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .px-2\.5 {
@@ -952,9 +970,18 @@ video {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.text-red {
+  --tw-text-opacity: 1;
+  color: rgba(247, 9, 9, var(--tw-text-opacity));
+}
+
 .text-green {
   --tw-text-opacity: 1;
   color: rgba(28, 247, 9, var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 *, ::before, ::after {
@@ -979,6 +1006,7 @@ video {
   --navy-color: #16293f;
   --grey-color: #a3b5c6;
   --green-color: #1cf709;
+  --red-color: #f70909;
   /* Linear Gradients Colours */
   --lightblue--color: #85c1fc;
   --darkblue--color: #5f7ff0;
