@@ -17,6 +17,7 @@
   --dark-color: #0e1721;
   --navy-color: #16293f;
   --grey-color: #a3b5c6;
+  --green-color: #1cf709;
 
   /* Linear Gradients Colours */
   --lightblue--color: #85c1fc;
@@ -92,6 +93,13 @@ p {
 
 .btn-primary:hover {
   background-color: var(--secondary-color) !important;
+}
+
+.btn-navy {
+  color: var(--white-color) !important;
+  background-color: transparent !important;
+  border: 2px solid var(--white-color) !important;
+  padding: 10px 33px !important;
 }
 
 .btn-white {
