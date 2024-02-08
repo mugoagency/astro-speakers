@@ -18,6 +18,14 @@ module.exports = {
         green: "#1CF709",
         red: "#F70909",
       },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        ipad: "960px",
+        lg: "1024px",
+        desktop: "1280px",
+        mac: "1400px",
+      },
     },
   },
   variants: {
