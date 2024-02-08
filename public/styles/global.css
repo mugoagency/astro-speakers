@@ -657,6 +657,11 @@ video {
   margin-bottom: 0px;
 }
 
+.my-24 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -755,6 +760,10 @@ video {
 
 .w-auto {
   width: auto;
+}
+
+.w-3\/6 {
+  width: 50%;
 }
 
 .w-7\/12 {
@@ -957,6 +966,11 @@ video {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .px-2\.5 {
