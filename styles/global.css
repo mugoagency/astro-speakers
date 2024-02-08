@@ -171,3 +171,7 @@ nav a {
     display: none;
   }
 }
+
+summary {
+  list-style: none !important;
+}
