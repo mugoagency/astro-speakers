@@ -718,6 +718,10 @@ video {
   margin-bottom: 6rem;
 }
 
+.ml-8 {
+  margin-left: 2rem;
+}
+
 .ml-10 {
   margin-left: 2.5rem;
 }
@@ -848,6 +852,10 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1120,6 +1128,7 @@ html,
 body {
   font-size: 62.5%;
   background: var(--black-color);
+  /* overflow: hidden; */
 }
 
 /* Typography */
@@ -1264,6 +1273,10 @@ summary {
     margin-bottom: 0px;
   }
 
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1288,6 +1301,10 @@ summary {
     flex-direction: column;
   }
 
+  .md\:items-center {
+    align-items: center;
+  }
+
   .md\:gap-5 {
     gap: 1.25rem;
   }
@@ -1306,6 +1323,10 @@ summary {
 
   .md\:pb-24 {
     padding-bottom: 6rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
   }
 }
 
