@@ -18,6 +18,7 @@ module.exports = {
         green: "#1CF709",
         red: "#F70909",
       },
+
       screens: {
         sm: "640px",
         md: "768px",
@@ -25,6 +26,18 @@ module.exports = {
         lg: "1024px",
         desktop: "1280px",
         mac: "1400px",
+      },
+
+      backgroundImage: {
+        "hero-pattern": "url('../images/Earth.png')",
+      },
+
+      backgroundSize: {
+        auto: "auto",
+        cover: "cover",
+        contain: "contain",
+        "50%": "50%",
+        "25%": "25%",
       },
     },
   },
