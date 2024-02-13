@@ -30,6 +30,7 @@ module.exports = {
 
       backgroundImage: {
         "hero-pattern": "url('../images/Earth.png')",
+        "hero-pattern-mobile": "url('../images/MobileEarth.png')",
       },
 
       backgroundSize: {
@@ -43,6 +44,10 @@ module.exports = {
       width: {
         "3.5/12": "28.5%",
       },
+
+      // minHeight: {
+      //   half: "80vh",
+      // },
     },
   },
   variants: {

@@ -72,18 +72,18 @@
     <main class="main pb-16">
       <section
         id="Hero"
-        class="bg-hero-pattern bg-auto h-full bg-cover bg-no-repeat bg-top"
+        class="bg-hero-pattern-mobile md:bg-hero-pattern bg-auto h-full bg-cover bg-no-repeat bg-top"
       >
         <div class="container">
           <div
             class="min-h-screen w-full flex flex-col justify-center items-center"
           >
-            <h1 class="text-white font-bold w-8/12 text-center">
+            <h1 class="text-white font-bold w-10/12 md:w-8/12 md:text-center">
               Astro Speakers Help Find Astronomy Speakers Near You
             </h1>
 
             <div
-              class="search w-3.5/12 text-center mt-12 rounded-full bg-white"
+              class="search w-10/12 md:w-3.5/12 text-center mt-12 rounded-full bg-white"
             >
               <form
                 id="search"
@@ -96,9 +96,9 @@
                   <div class="flex items-center justify-between">
                     <input
                       type="search"
-                      class="p-8 w-10/12 rounded-full outline-none"
+                      class="p-8 pr-0 pl-4 md:pl-8 w-10/12 md:w-10/12 md:text-2xl rounded-full outline-none"
                       id="txtPlaces"
-                      placeholder="Location"
+                      placeholder="Enter Your Location (Postcode, City, Town...)"
                       value=""
                       autocomplete="off"
                     />
