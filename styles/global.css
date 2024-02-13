@@ -184,3 +184,21 @@ summary {
 input {
   font-size: 1.2rem !important;
 }
+
+select::-ms-expand {
+  display: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+/* Current Solution to all Earth Image not displaying on Mac - Temporary Fix */
+@media screen and (min-width: 1400px) and (min-height: 700px) and (max-height: 1000px) {
+  #Hero {
+    padding-bottom: 12rem;
+  }
+}
