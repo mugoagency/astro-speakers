@@ -48,6 +48,10 @@ module.exports = {
       // minHeight: {
       //   half: "80vh",
       // },
+
+      maxWidth: {
+        mobile: "80%",
+      },
     },
   },
   variants: {
