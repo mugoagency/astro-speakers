@@ -167,3 +167,9 @@ nav a {
 summary {
   list-style: none !important;
 }
+
+/* Hero */
+
+input {
+  font-size: 1.4rem !important;
+}
