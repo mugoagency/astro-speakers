@@ -977,6 +977,10 @@ video {
   gap: 4rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -1432,11 +1436,6 @@ select {
 }
 
 @media (min-width: 640px) {
-  .sm\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
   .sm\:mx-16 {
     margin-left: 4rem;
     margin-right: 4rem;
@@ -1458,12 +1457,20 @@ select {
     height: 7rem;
   }
 
+  .sm\:h-32 {
+    height: 8rem;
+  }
+
   .sm\:w-8 {
     width: 2rem;
   }
 
   .sm\:w-28 {
     width: 7rem;
+  }
+
+  .sm\:w-32 {
+    width: 8rem;
   }
 
   .sm\:w-3\/12 {
@@ -1669,6 +1676,11 @@ select {
 }
 
 @media (min-width: 1280px) {
+  .desktop\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .desktop\:w-3 {
     width: 0.75rem;
   }
