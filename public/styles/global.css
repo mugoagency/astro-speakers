@@ -716,10 +716,6 @@ video {
   margin-right: 2rem;
 }
 
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
 .mr-12 {
   margin-right: 3rem;
 }
@@ -750,10 +746,6 @@ video {
 
 .ml-8 {
   margin-left: 2rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
 }
 
 .inline-block {
@@ -1447,6 +1439,14 @@ select {
 }
 
 @media (min-width: 640px) {
+  .sm\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
+  .sm\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
   .sm\:block {
     display: block;
   }
