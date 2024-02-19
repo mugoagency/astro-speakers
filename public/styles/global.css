@@ -1326,7 +1326,7 @@ ul {
 
 .btn {
   color: var(--white-color) !important;
-  padding: 12px 35px;
+  padding: 12px 21px;
   border-radius: 50rem;
   cursor: pointer;
   transition: all 0.3s;
@@ -1345,7 +1345,7 @@ ul {
   color: var(--white-color) !important;
   background-color: transparent !important;
   border: 2px solid var(--white-color) !important;
-  padding: 10px 33px !important;
+  padding: 10px 21px !important;
 }
 
 .btn-navy:hover {
