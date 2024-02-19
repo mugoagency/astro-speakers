@@ -1439,12 +1439,12 @@ select {
 }
 
 @media (min-width: 640px) {
-  .sm\:mr-10 {
-    margin-right: 2.5rem;
+  .sm\:mr-32 {
+    margin-right: 8rem;
   }
 
-  .sm\:ml-10 {
-    margin-left: 2.5rem;
+  .sm\:ml-32 {
+    margin-left: 8rem;
   }
 
   .sm\:block {
@@ -1681,6 +1681,14 @@ select {
 }
 
 @media (min-width: 960px) {
+  .ipad\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
+  .ipad\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
   .ipad\:w-3\/6 {
     width: 50%;
   }
