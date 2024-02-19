@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "author": "Mugo Agency",
   "scripts": {
-    "push": "postcss ./styles/*.css --base styles --dir ./public/styles/",
-    "watch": "onchange 'tailwind.config.js' './public/**/*.html' './styles/*.css' -- npm run push",
-    "build": "NODE_ENV=production postcss ./styles/*.css --base styles --dir ./public/styles/"
+    "push": "postcss ./postcss/*.css --base postcss --dir ./styles/",
+    "watch": "onchange 'tailwind.config.js' './*.html' './postcss/*.css' -- npm run push",
+    "build": "NODE_ENV=production postcss ./postcss/*.css --base postcss --dir ./styles/"
   },
   "dependencies": {
     "autoprefixer": "^10.2.1",

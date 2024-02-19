@@ -1,6 +1,6 @@
 {
 	"search.exclude": {
-		"**/public/styles/": true,
+		"**/styles/": true,
 		".git": true,
 		".gitignore": true
 	},
