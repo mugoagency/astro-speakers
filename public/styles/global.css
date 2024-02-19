@@ -736,6 +736,10 @@ video {
   margin-bottom: 6rem;
 }
 
+.mb-Hero-margin {
+  margin-bottom: -20rem;
+}
+
 .ml-8 {
   margin-left: 2rem;
 }

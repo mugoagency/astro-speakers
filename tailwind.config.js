@@ -54,6 +54,10 @@ module.exports = {
       maxWidth: {
         mobile: "80%",
       },
+
+      margin: {
+        "Hero-margin": "-20rem",
+      },
     },
   },
   variants: {
