@@ -1275,10 +1275,9 @@ video {
 @font-face {
   font-family: "Lab Grotesque Bold";
 
-  src: local("Lab Grotesque Bold"),
-    url(/Fonts/LabGrotesque-Bold.woff) format("woff");
+  src: local("Lab Grotesque"), url(/Fonts/LabGrotesque-Bold.woff) format("woff");
 
-  src: local("Lab Grotesque Bold 2"),
+  src: local("Lab Grotesque"),
     url(/Fonts/LabGrotesque-Bold.woff2) format("woff2");
 }
 
