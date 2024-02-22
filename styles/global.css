@@ -1248,6 +1248,44 @@ video {
   --tw-ring-shadow: 0 0 #0000;
 }
 
+/* Fonts */
+
+/* Regular */
+
+@font-face {
+  font-family: "Lab Grotesque";
+
+  src: local("Lab Grotesque"),
+    url(/Fonts/LabGrotesque-Regular.woff) format("woff");
+
+  src: local("Lab Grotesque 2"),
+    url(/Fonts/LabGrotesque-Regular.woff) format("woff2");
+}
+
+/* Medium */
+
+@font-face {
+  font-family: "Lab Grotesque Medium";
+
+  src: local("Lab Grotesque Medium"),
+    url(/Fonts/LabGrotesque-Medium.woff) format("woff");
+
+  src: local("Lab Grotesque Medium 2"),
+    url(/Fonts/LabGrotesque-Medium.woff2) format("woff2");
+}
+
+/* Bold */
+
+@font-face {
+  font-family: "Lab Grotesque Bold";
+
+  src: local("Lab Grotesque Bold"),
+    url(/Fonts/LabGrotesque-Bold.woff) format("woff");
+
+  src: local("Lab Grotesque Bold 2"),
+    url(/Fonts/LabGrotesque-Bold.woff2) format("woff2");
+}
+
 :root {
   --primary-color: #5e7ef0;
   --secondary-color: #1c44d3;
@@ -1269,12 +1307,14 @@ html,
 body {
   font-size: 62.5%;
   background: var(--black-color);
+  font-family: "Lab Grotesque";
   /* overflow: hidden; */
 }
 
 /* Typography */
 
 h1 {
+  font-family: "Lab Grotesque Bold";
   font-size: 3.2rem !important;
   line-height: 1.3 !important;
   @media (min-width: 640px) {

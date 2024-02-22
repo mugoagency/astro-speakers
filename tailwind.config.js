@@ -50,16 +50,16 @@ module.exports = {
         CardWidthDesktop: "31.8%",
       },
 
-      // minHeight: {
-      //   half: "80vh",
-      // },
-
       maxWidth: {
         mobile: "80%",
       },
 
       margin: {
         "Hero-margin": "-20rem",
+      },
+
+      fonts: {
+        LabGrotesque: "Lab Grotesque",
       },
     },
   },
