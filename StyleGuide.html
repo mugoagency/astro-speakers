@@ -1,6 +1,5 @@
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.5/dist/alpine.js"></script>
 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -62,7 +61,7 @@
 
                 <img
                   class="transform scale-125"
-                  src="images/Heart.svg"
+                  src="images/heart.svg"
                   alt="Heart Image"
                 />
               </div>
@@ -415,7 +414,7 @@
                       <div
                         class="flex items-center gap-4 sm:ml-32 md:ml-0 ipad:ml-10"
                       >
-                        <img src="images/label.svg" alt="Tag" />
+                        <img src="images/Label.svg" alt="Tag" />
                         <p class="text-white">Latest News</p>
                       </div>
 
@@ -427,7 +426,7 @@
                       <div
                         class="flex items-center gap-4 sm:mr-32 md:mr-0 ipad:mr-10"
                       >
-                        <img src="images/clock.svg" alt="Clock" />
+                        <img src="images/Clock.svg" alt="Clock" />
                         <p class="text-white">4 Min Read</p>
                       </div>
                     </div>
@@ -467,7 +466,7 @@
                       <div
                         class="flex items-center gap-4 sm:ml-32 md:ml-0 ipad:ml-10"
                       >
-                        <img src="images/label.svg" alt="Tag" />
+                        <img src="images/Label.svg" alt="Tag" />
                         <p class="text-white">Latest News</p>
                       </div>
 
@@ -479,7 +478,7 @@
                       <div
                         class="flex items-center gap-4 sm:mr-32 md:mr-0 ipad:mr-10"
                       >
-                        <img src="images/clock.svg" alt="Clock" />
+                        <img src="images/Clock.svg" alt="Clock" />
                         <p class="text-white">4 Min Read</p>
                       </div>
                     </div>
@@ -519,7 +518,7 @@
                       <div
                         class="flex items-center gap-4 sm:ml-32 md:ml-0 ipad:ml-10"
                       >
-                        <img src="images/label.svg" alt="Tag" />
+                        <img src="images/Label.svg" alt="Tag" />
                         <p class="text-white">Latest News</p>
                       </div>
 
@@ -531,7 +530,7 @@
                       <div
                         class="flex items-center gap-4 sm:mr-32 md:mr-0 ipad:mr-10"
                       >
-                        <img src="images/clock.svg" alt="Clock" />
+                        <img src="images/Clock.svg" alt="Clock" />
                         <p class="text-white">4 Min Read</p>
                       </div>
                     </div>
@@ -840,7 +839,7 @@
                   <div class="mr-8 w-full md:mr-8 w-12/12 md:w-3/12">
                     <img
                       class="w-32 h-auto md:h-32 md:w-32 md:w-full"
-                      src="images/lecturer.png"
+                      src="images/Lecturer.png"
                       alt="Lecture"
                     />
                   </div>
@@ -919,61 +918,65 @@
 
         <section id="TestCarousel" class="my-24">
           <div class="container">
+            <div
+              class="bg-teal-100 h-screen flex flex-col justify-center items-center"
+            >
+              <div
+                class="max-w-4xl mx-auto relative"
+                x-data="{ activeSlide: 1, slides: [1, 2, 3, 4, 5] }"
+              >
+                <!-- Slides -->
+                <template x-for="slide in slides" :key="slide">
+                  <div
+                    x-show="activeSlide === slide"
+                    class="bg-red p-24 font-bold text-5xl h-64 flex items-center bg-teal-500 text-white rounded-lg"
+                  >
+                    <span class="w-12 text-center" x-text="slide"></span>
+                    <span class="text-teal-300">/</span>
+                    <span
+                      class="w-12 text-center"
+                      x-text="slides.length"
+                    ></span>
+                  </div>
+                </template>
 
-            <!-- Dont Forget to Load the Script -->
+                <!-- Prev/Next Arrows -->
+                <div class="absolute inset-0 flex">
+                  <div class="flex items-center justify-start w-1/2">
+                    <button
+                      class="bg-teal-100 text-teal-500 hover:text-orange-500 font-bold hover:shadow-lg rounded-full w-12 h-12 -ml-6"
+                      x-on:click="activeSlide = activeSlide === 1 ? slides.length : activeSlide - 1"
+                    >
+                      &#8592;
+                    </button>
+                  </div>
+                  <div class="flex items-center justify-end w-1/2">
+                    <button
+                      class="bg-teal-100 text-teal-500 hover:text-orange-500 font-bold hover:shadow rounded-full w-12 h-12 -mr-6"
+                      x-on:click="activeSlide = activeSlide === slides.length ? 1 : activeSlide + 1"
+                    >
+                      &#8594;
+                    </button>
+                  </div>
+                </div>
 
-<div class="bg-teal-100 h-screen flex flex-col justify-center items-center">
-
-  <div
-    class="max-w-4xl mx-auto relative"
-    x-data="{ activeSlide: 1, slides: [1, 2, 3, 4, 5] }"
-   >
-    <!-- Slides -->
-    <template x-for="slide in slides" :key="slide">
-      <div
-         x-show="activeSlide === slide"
-         class="bg-red p-24 font-bold text-5xl h-64 flex items-center bg-teal-500 text-white rounded-lg">
-        <span class="w-12 text-center" x-text="slide"></span>
-        <span class="text-teal-300">/</span>
-        <span class="w-12 text-center" x-text="slides.length"></span>
-      </div>
-    </template>
-
-    <!-- Prev/Next Arrows -->
-    <div class="absolute inset-0 flex">
-      <div class="flex items-center justify-start w-1/2">
-        <button
-          class="bg-teal-100 text-teal-500 hover:text-orange-500 font-bold hover:shadow-lg rounded-full w-12 h-12 -ml-6"
-          x-on:click="activeSlide = activeSlide === 1 ? slides.length : activeSlide - 1">
-          &#8592;
-         </button>
-      </div>
-      <div class="flex items-center justify-end w-1/2">
-        <button
-          class="bg-teal-100 text-teal-500 hover:text-orange-500 font-bold hover:shadow rounded-full w-12 h-12 -mr-6"
-          x-on:click="activeSlide = activeSlide === slides.length ? 1 : activeSlide + 1">
-          &#8594;
-        </button>
-      </div>
-    </div>
-
-    <!-- Buttons -->
-    <div class="absolute w-full flex items-center justify-center px-4">
-      <template x-for="slide in slides" :key="slide">
-        <button
-          class="flex-1 w-4 h-2 mt-4 mx-2 mb-0 rounded-full overflow-hidden transition-colors duration-200 ease-out hover:bg-teal-600 hover:shadow-lg"
-          :class="{
+                <!-- Buttons -->
+                <div
+                  class="absolute w-full flex items-center justify-center px-4"
+                >
+                  <template x-for="slide in slides" :key="slide">
+                    <button
+                      class="flex-1 w-4 h-2 mt-4 mx-2 mb-0 rounded-full overflow-hidden transition-colors duration-200 ease-out hover:bg-teal-600 hover:shadow-lg"
+                      :class="{
               'bg-primary': activeSlide === slide,
               'bg-red': activeSlide !== slide
           }"
-          x-on:click="activeSlide = slide"
-        ></button>
-      </template>
-    </div>
-  </div>
-
-  </div>
-</div>
+                      x-on:click="activeSlide = slide"
+                    ></button>
+                  </template>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
