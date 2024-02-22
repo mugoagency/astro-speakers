@@ -1252,10 +1252,10 @@ video {
   font-family: "Lab Grotesque Regular";
 
   src: local("Lab Grotesque"),
-    url(/Fonts/LabGrotesque-Regular.woff) format("woff");
+    url(../Fonts/LabGrotesque-Regular.woff) format("woff");
 
   src: local("Lab Grotesque"),
-    url(/Fonts/LabGrotesque-Regular.woff) format("woff2");
+    url(../Fonts/LabGrotesque-Regular.woff) format("woff2");
 }
 
 /* Medium */
@@ -1264,10 +1264,10 @@ video {
   font-family: "Lab Grotesque Medium";
 
   src: local("Lab Grotesque"),
-    url(/Fonts/LabGrotesque-Medium.woff) format("woff");
+    url(../Fonts/LabGrotesque-Medium.woff) format("woff");
 
   src: local("Lab Grotesque"),
-    url(/Fonts/LabGrotesque-Medium.woff2) format("woff2");
+    url(../Fonts/LabGrotesque-Medium.woff2) format("woff2");
 }
 
 /* Bold */
