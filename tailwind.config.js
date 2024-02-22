@@ -47,6 +47,7 @@ module.exports = {
       width: {
         "3.5/12": "28.5%",
         "8.5/12": "70.0%",
+        CardWidthDesktop: "31.8%",
       },
 
       // minHeight: {
