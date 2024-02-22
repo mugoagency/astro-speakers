@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#5e7ef0" />
+
+    <title>Astro Speakers</title>
+
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+  </head>
+
+  <body>
+    <header class="header py-8 absolute w-full z-50">
+      <div class="container">
+        <div class="flex justify-between items-center m-8 xl:m-0">
+          <a href="/">
+            <img
+              class="max-w-mobile sm:max-w-full"
+              src="images/logo.svg"
+              alt="Astro Speakers"
+            />
+          </a>
+
+          <nav class="hidden md:flex items-center gap-12">
+            <a class="link" href="#">Organistations</a>
+            <a class="link" href="#">Lectures</a>
+            <a class="link" href="#">About</a>
+            <a class="link" href="#">Contact</a>
+            <a class="link" href="#">Login</a>
+            <a class="link" href="#">
+              <span class="heart relative mt-3">
+                <span
+                  class="absolute -top-3/4 left-3/4 p-4 rounded-full py-0 px-2.5 text-transparent text-black bg-white"
+                >
+                  2
+                </span>
+
+                <img
+                  class="transform scale-125"
+                  src="images/heart.svg"
+                  alt="Heart Image"
+                />
+              </span>
+            </a>
+            <a href="#" class="btn btn-primary">Join Now</a>
+          </nav>
+
+          <nav class="flex md:hidden items-center gap-9 md:gap-6">
+            <a class="link" href="#">
+              <div class="heart relative mr-6 md:mr-0 md:mt-3">
+                <div
+                  class="absolute -top-3/4 left-3/4 p-4 rounded-full py-0 px-2.5 text-transparent text-black bg-white"
+                >
+                  2
+                </div>
+
+                <img
+                  class="transform scale-125"
+                  src="images/Heart.svg"
+                  alt="Heart Image"
+                />
+              </div>
+            </a>
+            <a class="link w-12 h-12" href="#">
+              <img src="images/SearchIcon.svg" alt="Search Icon"
+            /></a>
+            <a class="link" href="#">
+              <img src="images/mobile-menu.svg" alt="Menu Icon" />
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main pb-16">
+      <section
+        id="Hero"
+        class="xr:mb-Hero-margin bg-hero-pattern-mobile ipad:bg-hero-pattern bg-auto h-full bg-cover bg-no-repeat bg-top"
+      >
+        <div class="container">
+          <div
+            class="pt-32 xr:pt-0 min-h-screen w-full flex flex-col justify-center items-center"
+          >
+            <h1 class="text-white font-bold w-10/12 md:w-8/12 sm:text-center">
+              Astro Speakers Help Find Astronomy Speakers Near You
+            </h1>
+
+            <div
+              class="search w-10/12 sm:w-8/12 md:w-6/12 ipad:w-5/12 desktop:w-3.5/12 text-center mt-12 rounded-full bg-white"
+            >
+              <form
+                id="search"
+                role="search"
+                method="post"
+                class="search-form"
+                action="#"
+              >
+                <div>
+                  <div class="flex items-center justify-between">
+                    <input
+                      type="search"
+                      class="p-8 pr-0 pl-4 md:pl-8 w-10/12 md:w-10/12 md:text-2xl rounded-full outline-none"
+                      id="txtPlaces"
+                      placeholder="Enter Your Location (Postcode, City, Town...)"
+                      value=""
+                      autocomplete="off"
+                    />
+                    <a class="btn btn-go">Go</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div
+              class="flex flex-col w-10/12 sm:w-8/12 md:w-6/12 ipad:w-5/12 desktop:w-3.5/12 mt-4"
+            >
+              <select
+                name="Place"
+                class="bg-white text-grey py-6 text-2xl pl-8 bg-beige rounded-t-3xl outline-none"
+              >
+                <option value="Peterborough">Peterborough</option>
+              </select>
+              <select
+                name="Place"
+                class="bg-white text-grey py-6 text-2xl pl-8 outline-none"
+              >
+                <option value="Petersfield">Petersfield</option>
+              </select>
+              <select
+                name="Place"
+                class="bg-white text-grey py-6 text-2xl pl-8 bg-beige outline-none"
+              >
+                <option value="Peak District">Peak District</option>
+              </select>
+              <select
+                name="Place"
+                class="bg-white text-grey py-6 text-2xl pl-8 outline-none"
+              >
+                <option value="Pembrokeshire">Pembrokeshire</option>
+              </select>
+              <select
+                name="Place"
+                class="bg-white text-grey py-6 text-2xl pl-8 bg-beige outline-none"
+              >
+                <option value="Pembury">Pembury</option>
+              </select>
+              <select
+                name="Place"
+                class="bg-white text-grey py-6 text-2xl pl-8 rounded-b-3xl outline-none"
+              >
+                <option value="Pen-y-bryn">Pen-y-bryn</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <section id="FeaturedSpeakersComponent" class="my-24">
+          <div class="container">
+            <h2 class="text-white text-center mb-12 font-bold">
+              Featured Speakers
+            </h2>
+
+            <div
+              class="flex flex-row gap-12 mb-24 flex-wrap justify-center desktop:flex-nowrap"
+            >
+              <div
+                class="bg-dark h-auto rounded-2xl py-16 px-8 sm:p-16 sm:px-12 w-full md:w-5/12 desktop:w-1/3 mx-8 md:mx-0"
+              >
+                <div class="flex flex-col">
+                  <div class="flex items-start gap-8 sm:gap-2">
+                    <div class="relative w-7/12">
+                      <img src="images/BrianCox.png" alt="Speaker" />
+                      <div
+                        class="-top-4 left-32 absolute p-4 bg-navy rounded-full"
+                      >
+                        <img
+                          class="transform scale-115"
+                          src="images/WhiteHeart.svg"
+                          alt="White Heart Image"
+                        />
+                      </div>
+                    </div>
+                    <div class="w-full">
+                      <h4 class="text-white">Professor Brian Cox</h4>
+                      <p class="text-white mt-4">PROF,FRAS,MBE,CBE,TNT</p>
+                      <p class="text-green mt-4 border-b border-navy pb-6">
+                        <span
+                          class="inline-block h-4 w-4 bg-green rounded-full mr-4"
+                        ></span
+                        >Available For Booking
+                      </p>
+                      <div class="gap-4 pt-6 hidden sm:flex">
+                        <img src="images/Marker.svg" alt="Speaker" />
+                        <p class="text-white">York, Yorkshire</p>
+                      </div>
+                      <div class="flex gap-4 pt-6">
+                        <img src="images/Globe.svg" alt="Speaker" />
+                        <p class="text-white">13 Miles Away</p>
+                      </div>
+                      <div class="flex gap-4 pt-6">
+                        <img src="images/Person.svg" alt="Speaker" />
+                        <p class="text-white">Academic Lecturer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex w-full mt-12 items-center justify-center gap-4"
+                  >
+                    <a class="btn btn-primary w-full text-center">Contact</a>
+                    <a class="btn btn-navy w-full text-center">View Details</a>
+                  </div>
+                  <p class="mt-8 hidden sm:block">
+                    Astrospeakers began in December 2015 with a small list of
+                    lecturers, since then it has grown to become the goto
+                    website for astronomical societies to...
+                    <a class="link text-white underline">Learn More</a>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-dark h-auto rounded-2xl py-16 px-8 sm:p-16 sm:px-12 w-full md:w-5/12 desktop:w-1/3 mx-8 md:mx-0"
+              >
+                <div class="flex flex-col">
+                  <div class="flex items-start gap-8 sm:gap-2">
+                    <div class="relative w-7/12">
+                      <img src="images/CharlesRAlcock.png" alt="Speaker" />
+                      <div
+                        class="-top-4 left-32 absolute p-4 bg-navy rounded-full"
+                      >
+                        <img
+                          class="transform scale-90"
+                          src="images/heart.svg"
+                          alt="Heart Image"
+                        />
+                      </div>
+                    </div>
+                    <div class="w-full">
+                      <h4 class="text-white">Charles R. Alcock</h4>
+                      <p class="text-white mt-4">PROF,FRAS,MBE,CBE,TNT</p>
+                      <p class="text-green mt-4 border-b border-navy pb-6">
+                        <span
+                          class="inline-block h-4 w-4 bg-green rounded-full mr-4"
+                        ></span
+                        >Available For Booking
+                      </p>
+                      <div class="gap-4 pt-6 hidden sm:flex">
+                        <img src="images/Marker.svg" alt="Speaker" />
+                        <p class="text-white">Peterborough, Cambridgeshire</p>
+                      </div>
+                      <div class="flex gap-4 pt-6">
+                        <img src="images/Globe.svg" alt="Speaker" />
+                        <p class="text-white">145 Miles Away</p>
+                      </div>
+                      <div class="flex gap-4 pt-6">
+                        <img src="images/Person.svg" alt="Speaker" />
+                        <p class="text-white">Professor Of Astrophysics</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex w-full mt-12 items-center justify-center gap-4"
+                  >
+                    <a class="btn btn-primary w-full text-center">Contact</a>
+                    <a class="btn btn-navy w-full text-center">View Details</a>
+                  </div>
+                  <p class="mt-8 hidden sm:block">
+                    Astrospeakers began in December 2015 with a small list of
+                    lecturers, since then it has grown to become the goto
+                    website for astronomical societies to...
+                    <a class="link text-white underline">Learn More</a>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-dark h-auto rounded-2xl py-16 px-8 sm:p-16 sm:px-12 w-full md:w-5/12 desktop:w-1/3 mx-8 md:mx-0"
+              >
+                <div class="flex flex-col">
+                  <div class="flex items-start gap-8 sm:gap-2">
+                    <div class="relative w-7/12">
+                      <img src="images/DavidCJewitt.png" alt="Speaker" />
+                      <div
+                        class="-top-4 left-32 absolute p-4 bg-navy rounded-full"
+                      >
+                        <img
+                          class="transform scale-90"
+                          src="images/heart.svg"
+                          alt="Heart Image"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="w-full">
+                      <h4 class="text-white">David C. Jewitt</h4>
+                      <p class="text-white mt-4">PROF,FRAS,MBE,CBE,TNT</p>
+                      <p class="text-red mt-4 border-b border-navy pb-6">
+                        <span
+                          class="inline-block h-4 w-4 bg-red rounded-full mr-4"
+                        ></span
+                        >Unavailable
+                      </p>
+                      <div class="gap-4 pt-6 hidden sm:flex">
+                        <img src="images/Marker.svg" alt="Speaker" />
+                        <p class="text-white">Westminster, London</p>
+                      </div>
+                      <div class="flex gap-4 pt-6">
+                        <img src="images/Globe.svg" alt="Speaker" />
+                        <p class="text-white">83 Miles Away</p>
+                      </div>
+                      <div class="flex gap-4 pt-6">
+                        <img src="images/Person.svg" alt="Speaker" />
+                        <p class="text-white">Academic Lecturer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex w-full mt-12 items-center justify-center gap-4"
+                  >
+                    <a class="btn btn-primary btn-faded w-full text-center"
+                      >Contact</a
+                    >
+                    <a class="btn btn-navy w-full text-center">View Details</a>
+                  </div>
+                  <p class="mt-8 hidden sm:block">
+                    Astrospeakers began in December 2015 with a small list of
+                    lecturers, since then it has grown to become the goto
+                    website for astronomical societies to...
+                    <a class="link text-white underline">Learn More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-center">
+              <a class="btn btn-navy w-auto inline-block my-0 mx-auto"
+                >View All Speakers</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section id="ImageTextComponent" class="my-24">
+          <div class="container">
+            <div
+              class="flex justify-between m-8 desktop:m-0 flex-col-reverse ipad:flex-row rounded-2xl items-center bg-dark"
+            >
+              <div
+                class="flex flex-col w-11/12 m-8 ipad:w-3/6 gap-8 py-16 ipad:py-12 ipad:px-12 desktop:px-24"
+              >
+                <h4 class="text-white">
+                  Welcome to 'astrospeakers.org' where Astronomical Societies
+                  find Speakers and Lecturers to speak at their meetings and the
+                  public, schools and interest groups find Astronomical
+                  Societies and Clubs to visit.
+                </h4>
+                <p>
+                  Astrospeakers began in December 2015 with a small list of
+                  lecturers, since then it has grown to become the goto website
+                  for astronomical societies to find the best speakers for their
+                  astronomy meetings. We have many lecturers in the field of
+                  astrophysics and astronomy from enthusiastic club speakers to
+                  top level professors and doctors.
+                </p>
+
+                <p>
+                  So, if your society or club are looking for astro speakers and
+                  lecturers for your meetings, simply click on 'Astro Speakers'
+                  above to get started. Perhaps you are an individual or a
+                  family, a school or activity group that are interested in
+                  astronomy and would like to find a local club or society to
+                  visit then click on 'Astro Societies' above to find one in
+                  your area.
+                </p>
+
+                <div class="flex mt-4">
+                  <a class="btn btn-navy w-auto inline-block">Learn More</a>
+                </div>
+              </div>
+
+              <img
+                class="ipad:w-3/6 desktop:w-auto"
+                src="images/ImageText.png"
+                alt="Stage"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="BlogCardsComponent" class="my-24">
+          <div class="container">
+            <h2 class="text-white text-center mb-12 font-bold">
+              Latest From The Blog
+            </h2>
+
+            <div
+              class="Blogcards flex flex-row gap-12 mb-24 flex-wrap justify-center desktop:flex-nowrap"
+            >
+              <div
+                class="Blogcards__individual bg-dark h-auto rounded-2xl w-full md:w-5/12 desktop:w-1/3 mx-8 md:mx-0"
+              >
+                <img
+                  class="Blogcards__individual-image w-full"
+                  src="images/MilkyWay.png"
+                  alt="MilkyWay Galaxy"
+                />
+
+                <div class="Blogcards__individual-content">
+                  <div class="flex justify-center p-8 flex-col items-center">
+                    <div
+                      class="flex w-11/12 justify-between border-b border-navy pb-6"
+                    >
+                      <div
+                        class="flex items-center gap-4 sm:ml-32 md:ml-0 ipad:ml-10"
+                      >
+                        <img src="images/label.svg" alt="Tag" />
+                        <p class="text-white">Latest News</p>
+                      </div>
+
+                      <div class="flex flex-col">
+                        <p class="text-navy">|</p>
+                        <p class="text-navy -mt-3">|</p>
+                      </div>
+
+                      <div
+                        class="flex items-center gap-4 sm:mr-32 md:mr-0 ipad:mr-10"
+                      >
+                        <img src="images/clock.svg" alt="Clock" />
+                        <p class="text-white">4 Min Read</p>
+                      </div>
+                    </div>
+
+                    <div class="w-11/12">
+                      <h4 class="text-white pt-8">
+                        How to see the Milky Way in the UK
+                      </h4>
+
+                      <p class="pt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc ut mattis ligula. In hac habitasse...
+                      </p>
+
+                      <div class="py-12">
+                        <a href="#" class="btn btn-navy">Read Article</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="Blogcards__individual bg-dark h-auto rounded-2xl w-full md:w-5/12 desktop:w-1/3 mx-8 md:mx-0"
+              >
+                <img
+                  class="Blogcards__individual-image w-full"
+                  src="images/PerseidMeteor.png"
+                  alt="Perseid Meteor Shower"
+                />
+
+                <div class="Blogcards__individual-content">
+                  <div class="flex justify-center p-8 flex-col items-center">
+                    <div
+                      class="flex w-11/12 justify-between border-b border-navy pb-6"
+                    >
+                      <div
+                        class="flex items-center gap-4 sm:ml-32 md:ml-0 ipad:ml-10"
+                      >
+                        <img src="images/label.svg" alt="Tag" />
+                        <p class="text-white">Latest News</p>
+                      </div>
+
+                      <div class="flex flex-col">
+                        <p class="text-navy">|</p>
+                        <p class="text-navy -mt-3">|</p>
+                      </div>
+
+                      <div
+                        class="flex items-center gap-4 sm:mr-32 md:mr-0 ipad:mr-10"
+                      >
+                        <img src="images/clock.svg" alt="Clock" />
+                        <p class="text-white">4 Min Read</p>
+                      </div>
+                    </div>
+
+                    <div class="w-11/12">
+                      <h4 class="text-white pt-8">
+                        Where and when to see the Perseid meteor shower in 2023
+                      </h4>
+
+                      <p class="pt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc ut mattis ligula. In hac habitasse...
+                      </p>
+
+                      <div class="py-12">
+                        <a href="#" class="btn btn-navy">Read Article</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="Blogcards__individual bg-dark h-auto rounded-2xl w-full md:w-5/12 desktop:w-1/3 mx-8 md:mx-0"
+              >
+                <img
+                  class="Blogcards__individual-image w-full"
+                  src="images/Jupiter&Venus.png"
+                  alt="Jupiter & Venus Cojunction"
+                />
+
+                <div class="Blogcards__individual-content">
+                  <div class="flex justify-center p-8 flex-col items-center">
+                    <div
+                      class="flex w-11/12 justify-between border-b border-navy pb-6"
+                    >
+                      <div
+                        class="flex items-center gap-4 sm:ml-32 md:ml-0 ipad:ml-10"
+                      >
+                        <img src="images/label.svg" alt="Tag" />
+                        <p class="text-white">Latest News</p>
+                      </div>
+
+                      <div class="flex flex-col">
+                        <p class="text-navy">|</p>
+                        <p class="text-navy -mt-3">|</p>
+                      </div>
+
+                      <div
+                        class="flex items-center gap-4 sm:mr-32 md:mr-0 ipad:mr-10"
+                      >
+                        <img src="images/clock.svg" alt="Clock" />
+                        <p class="text-white">4 Min Read</p>
+                      </div>
+                    </div>
+
+                    <div class="w-11/12">
+                      <h4 class="text-white pt-8">
+                        Jupiter and Venus conjunction - March 2023
+                      </h4>
+
+                      <p class="pt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc ut mattis ligula. In hac habitasse...
+                      </p>
+
+                      <div class="py-12">
+                        <a href="#" class="btn btn-navy">Read Article</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-center">
+              <a href="#" class="btn btn-navy w-auto inline-block my-0 mx-auto"
+                >View All Articles</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section id="LocationSearch" class="my-24">
+          <div class="container">
+            <h2 class="text-white md:text-center mb-12 ml-8 md:ml-0 font-bold">
+              Search For Speakers By Location
+            </h2>
+
+            <div
+              class="grid md:w-full grid-cols-2 md:grid-cols-4 md:gap-5 md:pt-24 md:pb-24 m-8 md:m-0"
+            >
+              <div class="flex md:flex-col md:gap-6">
+                <ul class="flex flex-col gap-6 md:items-center">
+                  <li>
+                    <a class="cursor-pointer">Bedfordshire (10)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Berkshire (2)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Bristol (23)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Buckinghamshire (43)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Cambridgeshire (1)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Cheshire (8)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Cornwall (4)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Cumbria (7)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Derbyshire (43)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Devon (2)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Dorset (5)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Durham (5)</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="flex md:flex-col md:gap-6">
+                <ul class="flex flex-col gap-6 md:items-center">
+                  <li>
+                    <a class="cursor-pointer">East Sussex (8)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Essex (31)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Gloucestershire (4)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Greater London (86)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Greater Manchester (43)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Hampshire (12)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Herefordshire (22)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Isle Of Wight (2)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Kent (4)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Lancashire (8)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Leicestershire (14)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Lincolnshire (9)</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="hidden md:flex md:flex-col md:gap-6">
+                <ul class="flex flex-col gap-6 md:items-center">
+                  <li>
+                    <a class="cursor-pointer">City Of London (13)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Merseyside (23)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Norfolk (17)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Northamptonshire (3)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Northumberland (4)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">North Yorkshire (5)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Nottinghamshire (54)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Oxfordshire (6)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Rutland (1)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Shropshire (5)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Somerset (5)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">South Yorkshire (8)</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="hidden md:flex md:flex-col md:gap-6">
+                <ul class="flex flex-col gap-6 md:items-center">
+                  <li>
+                    <a class="cursor-pointer">Staffordshire (23)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Suffolk (10)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Surrey (8)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Tyne and Wear (7)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Warwickshire (14)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">West Midlands (20)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">West Sussex (3)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">West Yorkshire (7)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Wiltshire (32)</a>
+                  </li>
+                  <li>
+                    <a class="cursor-pointer">Worcestershire (17)</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="Reviews" class="my-24">
+          <div class="container">
+            <h2 class="text-white mx-8 md:text-center mb-12 font-bold">
+              What Others Have Said About Astro Speakers
+            </h2>
+
+            <div
+              class="Reviews flex flex-row gap-12 mb-24 flex-wrap justify-center desktop:flex-nowrap"
+            >
+              <div
+                class="Reviews__individual bg-dark h-auto rounded-2xl w-full md:w-5/12 desktop:w-1/3 mx-8 md:mx-0"
+              >
+                <div class="Reviews__individual-content h-full">
+                  <div
+                    class="flex justify-center p-16 flex-col items-center h-full"
+                  >
+                    <div
+                      class="flex w-full justify-between flex-col h-full gap-16"
+                    >
+                      <h4 class="text-white">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Vivamus eget elementum elit, viverra consequat
+                        diam. Sed tempor dolor magna, eu egestas elit vehicula
+                        in. Aliquam vitae venenatis augue.”
+                      </h4>
+
+                      <div class="w-full flex flex-col gap-2">
+                        <p class="text-white">Professor Ian Robertson</p>
+                        <p>
+                          Director, Royal Observatory Edinburgh and Director,
+                        </p>
+                        <p>UK Astronomy</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="Reviews__individual bg-dark h-auto rounded-2xl w-full md:w-5/12 desktop:w-1/3 mx-8 md:mx-0"
+              >
+                <div class="Reviews__individual-content h-full">
+                  <div
+                    class="flex justify-center p-16 flex-col items-center h-full"
+                  >
+                    <div
+                      class="flex w-full justify-between flex-col h-full gap-16"
+                    >
+                      <h4 class="text-white">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Vivamus eget elementum elit, viverra consequat
+                        diam.”
+                      </h4>
+
+                      <div class="w-full flex flex-col gap-2">
+                        <p class="text-white">Andy Tuckwood</p>
+                        <p>East Midlands Stargazers</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="Reviews__individual bg-dark h-auto rounded-2xl w-full md:w-5/12 desktop:w-1/3 mx-8 md:mx-0"
+              >
+                <div class="Reviews__individual-content h-full">
+                  <div
+                    class="flex justify-center p-16 flex-col items-center h-full"
+                  >
+                    <div
+                      class="flex w-full justify-between flex-col h-full gap-16"
+                    >
+                      <h4 class="text-white">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Vivamus eget elementum elit, viverra consequat
+                        diam. Sed tempor dolor magna, eu egestas elit vehicula
+                        in. Aliquam vitae venenatis augue. Vivamus eget
+                        elementum elit, viverra consequat diam.”
+                      </h4>
+
+                      <div class="w-full flex flex-col gap-2">
+                        <p class="text-white">Mike Foulkes</p>
+                        <p>Director of BAA Saturn Section</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="LecturerCard" class="my-24">
+          <div class="container">
+            <div
+              class="lecturer flex items-center bg-dark rounded-2xl mx-8 desktop:mx-0"
+            >
+              <div
+                class="flex items-center flex-col md:flex-row py-16 mx-8 md:mx-16"
+              >
+                <div
+                  class="flex w-12/12 pb-8 border-b border-navy md:border-0 md:pb-0 md:w-8.5/12"
+                >
+                  <div class="mr-8 w-full md:mr-8 w-12/12 md:w-3/12">
+                    <img
+                      class="w-32 h-auto md:h-32 md:w-32 md:w-full"
+                      src="images/lecturer.png"
+                      alt="Lecture"
+                    />
+                  </div>
+
+                  <div
+                    class="flex flex-col gap-8 md:pr-8 md:border-r md:border-navy"
+                  >
+                    <div
+                      class="flex flex-col items-start md:flex-row md:items-center justify-between"
+                    >
+                      <h3 class="text-white">Lecture Name Goes Here</h3>
+                      <p>New</p>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nullam lacinia felis venenatis justo tristique, at lacinia
+                      diam venenatis. Nullam lacinia felis venenatis. Lorem
+                      ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                      lacinia felis venenatis justo tristique, at lacinia diam
+                      venenatis. Nullam lacinia felis venenatis.
+                    </p>
+                    <p>
+                      <span class="text-white">Target Audience:</span>
+                      Xxxxxxxxxx
+                    </p>
+                  </div>
+                </div>
+
+                <div class="w-full md:w-3/12 pt-8 md:pt-0 md:ml-16">
+                  <div class="flex flex-col">
+                    <div
+                      class="flex pb-8 md:pb-0 border-b border-navy md:border-0 items-start gap-2"
+                    >
+                      <div class="relative mr-12 md:mr-0 w-4/12 md:w-7/12">
+                        <img
+                          class="h-32 w-32 md:h-28 md:w-28"
+                          src="images/BrianCox.png"
+                          alt="Speaker"
+                        />
+                        <div
+                          class="-top-4 left-20 absolute p-4 bg-navy rounded-full"
+                        >
+                          <img
+                            class="transform scale-90"
+                            src="images/heart.svg"
+                            alt="Heart Image"
+                          />
+                        </div>
+                      </div>
+                      <div class="w-full">
+                        <h4 class="text-white">Charles R. Alcock</h4>
+                        <p class="text-white mt-4">PROF,FRAS,MBE,CBE,TNT</p>
+                        <p class="text-green mt-4">
+                          <span
+                            class="inline-block h-4 w-4 bg-green rounded-full mr-4"
+                          ></span
+                          >Available For Booking
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="flex w-full mt-12 items-center justify-center gap-4"
+                    >
+                      <a class="btn btn-primary w-full text-center">Contact</a>
+                      <a class="btn btn-navy w-full text-center"
+                        >View Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="overflow-hidden footer pt-16">
+      <div class="container">
+        <div
+          class="join-component flex flex-col justify-center items-center gap-4 bg-gradient-to-b from-lightblue to-darkblue py-16 rounded-2xl mx-8 desktop:m-0"
+        >
+          <h2 class="text-white text-center w-9/12 md:w-full">
+            Interested In Becoming An Astro Speaker?
+          </h2>
+
+          <p class="text-white text-center w-9/12 md:w-full mb-6">
+            Lorem ipsum dolor sit amet onsectetur adipiscing elit
+          </p>
+
+          <a href="#" class="btn btn-white"> Join Now </a>
+        </div>
+
+        <div
+          class="grid w-full md:grid-cols-4 md:gap-5 md:pt-24 md:pb-24 m-8 md:m-0"
+        >
+          <div class="hidden md:flex md:flex-col md:gap-12">
+            <h4 class="bold text-white">About Us</h4>
+
+            <div class="hidden md:flex md:flex-col md:gap-6">
+              <ul class="flex flex-col gap-6">
+                <li>
+                  <a class="cursor-pointer">Astro Speakers UK</a>
+                </li>
+                <li>
+                  <a class="cursor-pointer">Astro Societies UK</a>
+                </li>
+                <li>
+                  <a class="cursor-pointer">Astro Speakers World</a>
+                </li>
+                <li>
+                  <a class="cursor-pointer">Astro Societies World</a>
+                </li>
+                <li>
+                  <a class="cursor-pointer">About Us</a>
+                </li>
+                <li>
+                  <a class="cursor-pointer">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hidden md:flex md:flex-col md:gap-12">
+            <h4 class="bold text-white">Who Are You Looking For?</h4>
+
+            <div class="flex flex-col gap-6">
+              <ul class="flex flex-col gap-6">
+                <li>
+                  <a class="cursor-pointer">Speakers</a>
+                </li>
+                <li>
+                  <a class="cursor-pointer">Astronomers</a>
+                </li>
+                <li>
+                  <a class="cursor-pointer">Educators</a>
+                </li>
+                <li>
+                  <a class="cursor-pointer">Photographers</a>
+                </li>
+                <li>
+                  <a class="cursor-pointer">Advisors</a>
+                </li>
+                <li>
+                  <a class="cursor-pointer">Guides</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hidden md:flex md:flex-col md:gap-12">
+            <h4 class="bold text-white">Diary of Upcoming Events</h4>
+
+            <div class="flex flex-col gap-10 mr-8">
+              <div
+                class="flex flex-row items-center gap-6 border-b border-navy pb-10"
+              >
+                <div
+                  class="flex flex-col items-center justify-center rounded-full h-24 w-24 gap-1/2 bg-gradient-to-b from-lightblue to-darkblue"
+                >
+                  <p class="text-black">22</p>
+                  <p class="text-black">Sep</p>
+                </div>
+
+                <div>
+                  <p class="text-white mb-2">Event Name Here</p>
+                  <p>Date | Location | Time</p>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-row items-center gap-6 border-b border-navy pb-10"
+              >
+                <div
+                  class="flex flex-col items-center justify-center rounded-full h-24 w-24 gap-1/2 bg-gradient-to-b from-lightblue to-darkblue"
+                >
+                  <p class="text-black">16</p>
+                  <p class="text-black">Aug</p>
+                </div>
+
+                <div>
+                  <p class="text-white mb-2">Event Name Here</p>
+                  <p>Date | Location | Time</p>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-row items-center gap-6 border-b border-navy pb-10"
+              >
+                <div
+                  class="flex flex-col items-center justify-center rounded-full h-24 w-24 gap-1/2 bg-gradient-to-b from-lightblue to-darkblue"
+                >
+                  <p class="text-black">01</p>
+                  <p class="text-black">Jul</p>
+                </div>
+
+                <div>
+                  <p class="text-white mb-2">Event Name Here</p>
+                  <p>Date | Location | Time</p>
+                </div>
+              </div>
+
+              <p class="text-white">See More Events</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-12 mb-16 md:mb-0">
+            <a href="/">
+              <img src="images/logo.svg" alt="Logo Image" />
+            </a>
+
+            <div class="flex flex-col gap-12 mr-4 w-10/12 md:w-full">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut
+                mattis ligula. In hac habitasse platea dictumst.
+              </p>
+
+              <div class="flex flex-row gap-4">
+                <a
+                  class="border border-white h-16 w-16 rounded-full flex items-center"
+                  href="#"
+                >
+                  <img
+                    class="my-0 mx-auto"
+                    src="images/facebook.svg"
+                    alt="Facebook"
+                  />
+                </a>
+
+                <a
+                  class="border border-white h-16 w-16 rounded-full flex items-center"
+                  href="#"
+                >
+                  <img
+                    class="my-0 mx-auto"
+                    src="images/youtube.svg"
+                    alt="Youtube"
+                  />
+                </a>
+
+                <a
+                  class="border border-white h-16 w-16 rounded-full flex items-center"
+                  href="#"
+                >
+                  <img
+                    class="my-0 mx-auto"
+                    src="images/instagram.svg"
+                    alt="Instagram"
+                  />
+                </a>
+
+                <a
+                  class="border border-white h-16 w-16 rounded-full flex items-center"
+                  href="#"
+                >
+                  <img
+                    class="my-0 mx-auto"
+                    src="images/pinterest.svg"
+                    alt="Pinterest"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:hidden flex flex-col gap-8 pb-16">
+            <details class="border-b border-navy pb-10 mr-16">
+              <summary>
+                <h4 class="text-white">About Us</h4>
+              </summary>
+
+              <div class="mt-4">
+                <p>About Us Dropdown Text Here</p>
+              </div>
+            </details>
+
+            <details class="border-b border-navy pb-10 mr-16">
+              <summary>
+                <h4 class="text-white">Who Are You Looking For?</h4>
+              </summary>
+
+              <div class="mt-4">
+                <p>Who Are You Looking For? Dropdown Text Here</p>
+              </div>
+            </details>
+
+            <details class="border-b border-navy pb-10 mr-16">
+              <summary>
+                <h4 class="text-white">Diary of Upcoming Events</h4>
+              </summary>
+
+              <div class="mt-4">
+                <p>Diary of Upcoming Events Dropdown Text Here</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      <img
+        class="my-0 mx-auto w-full"
+        src="images/logo-text.svg"
+        alt="Astro Speakers"
+      />
+
+      <div class="copyright bg-dark py-8">
+        <div class="container">
+          <p class="text-center">Copyright &copy; AstroSpeakers.Org 2024</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
