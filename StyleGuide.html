@@ -1017,14 +1017,14 @@
               >
                 <!-- Slides Tab/Dots Count -->
                 <div
-                  class="mx-auto w-2/12 flex items-center justify-center px-4 mb-12"
+                  class="mx-auto w-6/12 sm:w-2/12 flex items-center justify-center px-4 mb-12"
                 >
                   <template x-for="slide in slides" :key="slide">
                     <button
                       class="flex-1 w-4 h-2 mt-4 mx-2 mb-0 rounded-full cursor-pointer overflow-hidden transition-colors duration-200 ease-out hover:bg-teal-600 hover:shadow-lg"
                       :class="{
                           'bg-primary': activeSlide === slide,
-                          'bg-grey': activeSlide !== slide
+                          'bg-dotsBackground': activeSlide !== slide
                       }"
                       x-on:click="activeSlide = slide"
                     ></button>

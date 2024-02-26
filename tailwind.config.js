@@ -18,6 +18,7 @@ module.exports = {
         green: "#1CF709",
         red: "#F70909",
         beige: "#F3F3F3",
+        dotsBackground: "rgba(243, 243, 243, 0.2)",
       },
 
       screens: {
