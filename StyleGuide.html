@@ -1014,26 +1014,231 @@
               class="bg-teal-100 h-screen flex flex-col justify-center items-center"
             >
               <div
-                class="max-w-4xl mx-auto relative"
-                x-data="{ activeSlide: 1, slides: [1, 2, 3, 4, 5] }"
+                class="mx-auto relative"
+                x-data="{ activeSlide: 1, slides: [1, 2, 3] }"
               >
+                <!-- Slides Tab/Dots Count -->
+                <div
+                  class="mx-auto w-2/12 flex items-center justify-center px-4 mb-12"
+                >
+                  <template x-for="slide in slides" :key="slide">
+                    <button
+                      class="flex-1 w-4 h-2 mt-4 mx-2 mb-0 rounded-full cursor-pointer overflow-hidden transition-colors duration-200 ease-out hover:bg-teal-600 hover:shadow-lg"
+                      :class="{
+                          'bg-primary': activeSlide === slide,
+                          'bg-grey': activeSlide !== slide
+                      }"
+                      x-on:click="activeSlide = slide"
+                    ></button>
+                  </template>
+                </div>
+
                 <!-- Slides -->
                 <template x-for="slide in slides" :key="slide">
                   <div
                     x-show="activeSlide === slide"
-                    class="bg-red p-24 font-bold text-5xl h-64 flex items-center bg-teal-500 text-white rounded-lg"
+                    class="flex flex-row gap-12 mb-24 flex-wrap justify-center desktop:flex-nowrap"
                   >
-                    <span class="w-12 text-center" x-text="slide"></span>
-                    <span class="text-teal-300">/</span>
-                    <span
-                      class="w-12 text-center"
-                      x-text="slides.length"
-                    ></span>
+                    <!-- Individual Cards -->
+                    <div
+                      class="bg-dark h-auto rounded-2xl py-16 px-8 sm:p-16 sm:px-12 w-full md:w-5/12 desktop:w-1/3 mx-8 md:mx-0"
+                    >
+                      <div class="flex flex-col">
+                        <div class="flex items-start gap-8 sm:gap-2">
+                          <div class="relative w-7/12">
+                            <img src="images/BrianCox.png" alt="Speaker" />
+                            <div
+                              class="-top-4 left-32 absolute p-4 bg-navy rounded-full"
+                            >
+                              <img
+                                class="transform scale-115"
+                                src="images/WhiteHeart.svg"
+                                alt="White Heart Image"
+                              />
+                            </div>
+                          </div>
+                          <div class="w-full">
+                            <h4 class="text-white">Professor Brian Cox</h4>
+                            <p class="text-white mt-4">PROF,FRAS,MBE,CBE,TNT</p>
+                            <p
+                              class="text-green mt-4 border-b border-navy pb-6"
+                            >
+                              <span
+                                class="inline-block h-4 w-4 bg-green rounded-full mr-4"
+                              ></span
+                              >Available For Booking
+                            </p>
+                            <div class="gap-4 pt-6 hidden sm:flex">
+                              <img src="images/Marker.svg" alt="Speaker" />
+                              <p class="text-white">York, Yorkshire</p>
+                            </div>
+                            <div class="flex gap-4 pt-6">
+                              <img src="images/Globe.svg" alt="Speaker" />
+                              <p class="text-white">13 Miles Away</p>
+                            </div>
+                            <div class="flex gap-4 pt-6">
+                              <img src="images/Person.svg" alt="Speaker" />
+                              <p class="text-white">Academic Lecturer</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="flex w-full mt-12 items-center justify-center gap-4"
+                        >
+                          <a class="btn btn-primary w-full text-center"
+                            >Contact</a
+                          >
+                          <a class="btn btn-navy w-full text-center"
+                            >View Details</a
+                          >
+                        </div>
+                        <p class="mt-8 hidden sm:block">
+                          Astrospeakers began in December 2015 with a small list
+                          of lecturers, since then it has grown to become the
+                          goto website for astronomical societies to...
+                          <a class="link text-white underline">Learn More</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-dark h-auto rounded-2xl py-16 px-8 sm:p-16 sm:px-12 w-full md:w-5/12 desktop:w-1/3 mx-8 md:mx-0"
+                    >
+                      <div class="flex flex-col">
+                        <div class="flex items-start gap-8 sm:gap-2">
+                          <div class="relative w-7/12">
+                            <img
+                              src="images/CharlesRAlcock.png"
+                              alt="Speaker"
+                            />
+                            <div
+                              class="-top-4 left-32 absolute p-4 bg-navy rounded-full"
+                            >
+                              <img
+                                class="transform scale-90"
+                                src="images/heart.svg"
+                                alt="Heart Image"
+                              />
+                            </div>
+                          </div>
+                          <div class="w-full">
+                            <h4 class="text-white">Charles R. Alcock</h4>
+                            <p class="text-white mt-4">PROF,FRAS,MBE,CBE,TNT</p>
+                            <p
+                              class="text-green mt-4 border-b border-navy pb-6"
+                            >
+                              <span
+                                class="inline-block h-4 w-4 bg-green rounded-full mr-4"
+                              ></span
+                              >Available For Booking
+                            </p>
+                            <div class="gap-4 pt-6 hidden sm:flex">
+                              <img src="images/Marker.svg" alt="Speaker" />
+                              <p class="text-white">
+                                Peterborough, Cambridgeshire
+                              </p>
+                            </div>
+                            <div class="flex gap-4 pt-6">
+                              <img src="images/Globe.svg" alt="Speaker" />
+                              <p class="text-white">145 Miles Away</p>
+                            </div>
+                            <div class="flex gap-4 pt-6">
+                              <img src="images/Person.svg" alt="Speaker" />
+                              <p class="text-white">
+                                Professor Of Astrophysics
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="flex w-full mt-12 items-center justify-center gap-4"
+                        >
+                          <a class="btn btn-primary w-full text-center"
+                            >Contact</a
+                          >
+                          <a class="btn btn-navy w-full text-center"
+                            >View Details</a
+                          >
+                        </div>
+                        <p class="mt-8 hidden sm:block">
+                          Astrospeakers began in December 2015 with a small list
+                          of lecturers, since then it has grown to become the
+                          goto website for astronomical societies to...
+                          <a class="link text-white underline">Learn More</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-dark h-auto rounded-2xl py-16 px-8 sm:p-16 sm:px-12 w-full md:w-5/12 desktop:w-1/3 mx-8 md:mx-0"
+                    >
+                      <div class="flex flex-col">
+                        <div class="flex items-start gap-8 sm:gap-2">
+                          <div class="relative w-7/12">
+                            <img src="images/DavidCJewitt.png" alt="Speaker" />
+                            <div
+                              class="-top-4 left-32 absolute p-4 bg-navy rounded-full"
+                            >
+                              <img
+                                class="transform scale-90"
+                                src="images/heart.svg"
+                                alt="Heart Image"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="w-full">
+                            <h4 class="text-white">David C. Jewitt</h4>
+                            <p class="text-white mt-4">PROF,FRAS,MBE,CBE,TNT</p>
+                            <p class="text-red mt-4 border-b border-navy pb-6">
+                              <span
+                                class="inline-block h-4 w-4 bg-red rounded-full mr-4"
+                              ></span
+                              >Unavailable
+                            </p>
+                            <div class="gap-4 pt-6 hidden sm:flex">
+                              <img src="images/Marker.svg" alt="Speaker" />
+                              <p class="text-white">Westminster, London</p>
+                            </div>
+                            <div class="flex gap-4 pt-6">
+                              <img src="images/Globe.svg" alt="Speaker" />
+                              <p class="text-white">83 Miles Away</p>
+                            </div>
+                            <div class="flex gap-4 pt-6">
+                              <img src="images/Person.svg" alt="Speaker" />
+                              <p class="text-white">Academic Lecturer</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="flex w-full mt-12 items-center justify-center gap-4"
+                        >
+                          <a
+                            class="btn btn-primary btn-faded w-full text-center"
+                            >Contact</a
+                          >
+                          <a class="btn btn-navy w-full text-center"
+                            >View Details</a
+                          >
+                        </div>
+                        <p class="mt-8 hidden sm:block">
+                          Astrospeakers began in December 2015 with a small list
+                          of lecturers, since then it has grown to become the
+                          goto website for astronomical societies to...
+                          <a class="link text-white underline">Learn More</a>
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </template>
 
+                <!-- View All Speakers Button -->
+                <div class="flex justify-center">
+                  <a class="btn btn-navy w-auto inline-block my-0 mx-auto"
+                    >View All Speakers</a
+                  >
+                </div>
+
                 <!-- Prev/Next Arrows -->
-                <div class="absolute inset-0 flex">
+                <!-- <div class="absolute inset-0 flex">
                   <div class="flex items-center justify-start w-1/2">
                     <button
                       class="bg-teal-100 text-teal-500 hover:text-orange-500 font-bold hover:shadow-lg rounded-full w-12 h-12 -ml-6"
@@ -1050,23 +1255,7 @@
                       &#8594;
                     </button>
                   </div>
-                </div>
-
-                <!-- Buttons -->
-                <div
-                  class="absolute w-full flex items-center justify-center px-4"
-                >
-                  <template x-for="slide in slides" :key="slide">
-                    <button
-                      class="flex-1 w-4 h-2 mt-4 mx-2 mb-0 rounded-full overflow-hidden transition-colors duration-200 ease-out hover:bg-teal-600 hover:shadow-lg"
-                      :class="{
-              'bg-primary': activeSlide === slide,
-              'bg-red': activeSlide !== slide
-          }"
-                      x-on:click="activeSlide = slide"
-                    ></button>
-                  </template>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
