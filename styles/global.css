@@ -1305,7 +1305,16 @@ video {
   color: rgba(163, 181, 198, var(--tw-text-opacity));
 }
 
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
 .underline {
+  text-decoration: underline;
+}
+
+.hover\:underline:hover {
   text-decoration: underline;
 }
 
