@@ -1261,11 +1261,19 @@
       </div>
 
       <section
-        class="md:hidden absolute w-11/12 h-screen bg-dark top-0 z-50 right-0"
+        class="hidden absolute w-11/12 h-screen bg-dark top-0 z-50 right-0"
         id="MobileMenu"
+        x-show="open"
+        x-collapse
+        x-data="{open: true, toggle(){this.open = !this.open;}}"
       >
-        <a href="" class="absolute top-10 right-10">
-          <img class="my-0 mx-auto" src="images/Cross.svg" alt="Cross" />
+        <a href="#" class="absolute top-10 right-10">
+          <img
+            class="my-0 mx-auto"
+            @click="toggle"
+            src="images/Cross.svg"
+            alt="Cross"
+          />
         </a>
 
         <ul class="pt-20 ml-8">
