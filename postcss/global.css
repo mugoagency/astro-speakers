@@ -61,7 +61,6 @@ body {
   font-size: 62.5%;
   background: var(--black-color);
   font-family: "Lab Grotesque Regular";
-  /* overflow: hidden; */
 }
 
 /* Typography */
@@ -236,4 +235,9 @@ select {
   #Hero {
     padding-bottom: 12rem;
   }
+}
+
+/* Helper Class - Locked Scroll */
+.locked {
+  overflow: hidden !important;
 }

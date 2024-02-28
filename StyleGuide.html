@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/layout.css" />
   </head>
 
-  <body>
+  <body x-data="{open: true}" x-bind:class="! open ? '' : 'locked'">
     <header class="header md:py-8 absolute w-full z-50">
       <div class="container">
         <div class="flex justify-between items-center m-8 xl:m-0">
@@ -69,7 +69,7 @@
             <a class="link w-12 h-12" href="#">
               <img src="images/SearchIcon.svg" alt="Search Icon"
             /></a>
-            <a class="link" href="#">
+            <a class="link" x-on:click="open = ! open" href="#">
               <img src="images/mobile-menu.svg" alt="Menu Icon" />
             </a>
           </nav>
@@ -1264,7 +1264,6 @@
         class="md:hidden"
         x-bind:class="! open ? 'hidden' : ''"
         id="MobileMenu"
-        x-data="{open: false}"
       >
         <div class="absolute w-11/12 h-screen bg-dark top-0 z-50 right-0">
           <button
