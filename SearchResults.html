@@ -1,3 +1,5 @@
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.5/dist/alpine.js"></script>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,8 +14,8 @@
     <link rel="stylesheet" href="styles/layout.css" />
   </head>
 
-  <body>
-    <header class="header py-8 absolute w-full z-50">
+  <body x-data="{open: false}" x-bind:class="! open ? '' : 'locked'">
+    <header class="header md:py-8 absolute w-full z-50">
       <div class="container">
         <div class="flex justify-between items-center m-8 xl:m-0">
           <a href="index.html">
@@ -67,7 +69,7 @@
             <a class="link w-12 h-12" href="#">
               <img src="images/SearchIcon.svg" alt="Search Icon"
             /></a>
-            <a class="link" href="#">
+            <a class="link" x-on:click="open = ! open" href="#">
               <img src="images/mobile-menu.svg" alt="Menu Icon" />
             </a>
           </nav>
@@ -100,7 +102,7 @@
                 id="search"
                 role="search"
                 method="post"
-                class="search-form"
+                class="search-form mb-0"
                 action="#"
               >
                 <div>
@@ -704,5 +706,123 @@
         </div>
       </div>
     </footer>
+
+    <div
+      class="md:hidden"
+      x-bind:class="! open ? 'hidden' : ''"
+      id="MobileMenu"
+    >
+      <div class="absolute w-11/12 h-screen bg-dark top-0 z-50 right-0">
+        <button x-on:click="open = ! open" class="absolute top-10 right-10">
+          <img class="my-0 mx-auto" src="images/Cross.svg" alt="Cross" />
+        </button>
+
+        <ul class="pt-20 ml-8">
+          <li class="mb-6">
+            <a href="/"><h3 class="text-white">Home</h3></a>
+          </li>
+          <li class="mb-6">
+            <a href="/"><h3 class="text-white">Lectures</h3></a>
+          </li>
+          <li class="mb-6">
+            <a href="/"><h3 class="text-white">About</h3></a>
+          </li>
+          <li class="mb-6">
+            <a href="/"><h3 class="text-white">Contact</h3></a>
+          </li>
+          <li>
+            <a href="/"><h3 class="text-white">Login</h3></a>
+          </li>
+        </ul>
+
+        <div class="mx-8 text-center my-12">
+          <a class="btn block btn-primary">Join Now</a>
+        </div>
+
+        <div class="grid w-12/12 m-8">
+          <div class="flex flex-col gap-8 pb-16">
+            <details class="border-b border-navy pb-4">
+              <summary>
+                <h4 class="text-white">About Us</h4>
+              </summary>
+
+              <div class="mt-4">
+                <p>About Us Dropdown Text Here</p>
+              </div>
+            </details>
+
+            <details class="border-b border-navy pb-4">
+              <summary>
+                <h4 class="text-white">Who Are You Looking For?</h4>
+              </summary>
+
+              <div class="mt-4">
+                <p>Who Are You Looking For? Dropdown Text Here</p>
+              </div>
+            </details>
+
+            <details class="border-b border-navy pb-4">
+              <summary>
+                <h4 class="text-white">Diary of Upcoming Events</h4>
+              </summary>
+
+              <div class="mt-4">
+                <p>Diary of Upcoming Events Dropdown Text Here</p>
+              </div>
+            </details>
+          </div>
+
+          <div class="flex flex-col gap-12 mb-16 md:mb-0">
+            <div class="flex flex-col gap-12 mr-4 w-10/12 md:w-full">
+              <div class="flex flex-row gap-4">
+                <a
+                  class="border border-white h-16 w-16 rounded-full flex items-center"
+                  href="#"
+                >
+                  <img
+                    class="my-0 mx-auto"
+                    src="images/facebook.svg"
+                    alt="Facebook"
+                  />
+                </a>
+
+                <a
+                  class="border border-white h-16 w-16 rounded-full flex items-center"
+                  href="#"
+                >
+                  <img
+                    class="my-0 mx-auto"
+                    src="images/youtube.svg"
+                    alt="Youtube"
+                  />
+                </a>
+
+                <a
+                  class="border border-white h-16 w-16 rounded-full flex items-center"
+                  href="#"
+                >
+                  <img
+                    class="my-0 mx-auto"
+                    src="images/instagram.svg"
+                    alt="Instagram"
+                  />
+                </a>
+
+                <a
+                  class="border border-white h-16 w-16 rounded-full flex items-center"
+                  href="#"
+                >
+                  <img
+                    class="my-0 mx-auto"
+                    src="images/pinterest.svg"
+                    alt="Pinterest"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
