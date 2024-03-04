@@ -1896,6 +1896,10 @@ select {
     width: 41.666667%;
   }
 
+  .ipad\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .ipad\:flex-row {
     flex-direction: row;
   }
