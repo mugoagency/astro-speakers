@@ -51,6 +51,7 @@ module.exports = {
         CardWidthDesktop: "31.8%",
         HeartMobile: "35px",
         TabletCard: "45%",
+        fit: "fit-content",
       },
 
       maxWidth: {

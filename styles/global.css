@@ -917,6 +917,11 @@ video {
   width: 35px;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .max-w-mobile {
   max-width: 80%;
 }
