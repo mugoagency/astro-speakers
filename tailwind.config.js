@@ -50,6 +50,7 @@ module.exports = {
         "8.5/12": "70.0%",
         CardWidthDesktop: "31.8%",
         HeartMobile: "35px",
+        TabletCard: "45%",
       },
 
       maxWidth: {
