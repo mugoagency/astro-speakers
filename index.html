@@ -15,7 +15,7 @@
   </head>
 
   <body x-data="{open: false}" x-bind:class="! open ? '' : 'locked'">
-    <header class="header md:py-8 absolute w-full z-50">
+    <header class="header ipad:py-8 absolute w-full z-50">
       <div class="container">
         <div class="flex justify-between items-center m-8 xl:m-0">
           <a href="index.html">
@@ -26,7 +26,7 @@
             />
           </a>
 
-          <nav class="hidden md:flex items-center gap-12">
+          <nav class="hidden ipad:flex items-center gap-12">
             <a class="link" href="#">Organistations</a>
             <a class="link" href="#">Lectures</a>
             <a class="link" href="#">About</a>
@@ -50,9 +50,9 @@
             <a href="#" class="btn btn-primary">Join Now</a>
           </nav>
 
-          <nav class="flex md:hidden items-center gap-9 md:gap-6">
+          <nav class="flex ipad:hidden items-center gap-9 md:gap-6">
             <a class="link" href="#">
-              <div class="heart relative mr-6 md:mr-0 md:mt-3">
+              <div class="heart relative mr-6 ipad:mr-0 ipad:mt-3">
                 <div
                   class="absolute -top-3/4 left-3/4 p-4 rounded-full py-0 px-2.5 text-transparent text-black bg-white"
                 >
@@ -1021,7 +1021,7 @@
     </footer>
 
     <div
-      class="md:hidden"
+      class="ipad:hidden"
       x-bind:class="! open ? 'hidden' : ''"
       id="MobileMenu"
     >

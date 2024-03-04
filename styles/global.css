@@ -1685,10 +1685,6 @@ select {
     margin-right: 4rem;
   }
 
-  .md\:mt-3 {
-    margin-top: 0.75rem;
-  }
-
   .md\:mr-0 {
     margin-right: 0px;
   }
@@ -1895,12 +1891,28 @@ select {
 }
 
 @media (min-width: 960px) {
+  .ipad\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
+  .ipad\:mr-0 {
+    margin-right: 0px;
+  }
+
   .ipad\:mr-10 {
     margin-right: 2.5rem;
   }
 
   .ipad\:ml-10 {
     margin-left: 2.5rem;
+  }
+
+  .ipad\:flex {
+    display: flex;
+  }
+
+  .ipad\:hidden {
+    display: none;
   }
 
   .ipad\:w-3\/6 {
@@ -1922,6 +1934,11 @@ select {
   .ipad\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .ipad\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .ipad\:py-12 {
