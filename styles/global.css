@@ -913,6 +913,10 @@ video {
   width: 100%;
 }
 
+.w-HeartMobile {
+  width: 35px;
+}
+
 .max-w-mobile {
   max-width: 80%;
 }
