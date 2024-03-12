@@ -1061,6 +1061,10 @@ video {
   border-width: 1px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }
@@ -1264,6 +1268,11 @@ video {
   text-align: center;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1291,6 +1300,11 @@ video {
 .text-green {
   --tw-text-opacity: 1;
   color: rgba(28, 247, 9, var(--tw-text-opacity));
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgba(94, 126, 240, var(--tw-text-opacity));
 }
 
 .text-navy {
