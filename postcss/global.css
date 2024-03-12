@@ -244,7 +244,7 @@ select {
 
 /* Details After Element */
 details::after {
-  content: url("images/Arrow.svg");
+  content: url("../images/Arrow.svg");
   position: absolute;
   top: 10px;
   right: 0%;
