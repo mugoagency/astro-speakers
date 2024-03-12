@@ -1688,6 +1688,10 @@ select {
     margin-left: 4rem;
   }
 
+  .md\:inline-block {
+    display: inline-block;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1770,6 +1774,10 @@ select {
 
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:gap-5 {
