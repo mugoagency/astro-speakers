@@ -1953,6 +1953,10 @@ select {
     margin-right: 0px;
   }
 
+  .desktop\:mr-16 {
+    margin-right: 4rem;
+  }
+
   .desktop\:w-3 {
     width: 0.75rem;
   }
