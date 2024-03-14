@@ -28,6 +28,7 @@ module.exports = {
         md: "768px",
         ipad: "960px",
         lg: "1024px",
+        smalldesktop: "1200px",
         desktop: "1280px",
         mac: "1400px",
       },

@@ -610,6 +610,12 @@ video {
   }
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
@@ -1696,11 +1702,6 @@ details[open]::after {
     margin-right: 0px;
   }
 
-  .md\:mx-16 {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-
   .md\:my-24 {
     margin-top: 6rem;
     margin-bottom: 6rem;
@@ -1756,10 +1757,6 @@ details[open]::after {
 
   .md\:w-32 {
     width: 8rem;
-  }
-
-  .md\:w-3\/12 {
-    width: 25%;
   }
 
   .md\:w-5\/12 {
@@ -1989,6 +1986,16 @@ details[open]::after {
   }
 }
 
+@media (min-width: 1200px) {
+  .smalldesktop\:w-3\/12 {
+    width: 25%;
+  }
+
+  .smalldesktop\:w-full {
+    width: 100%;
+  }
+}
+
 @media (min-width: 1280px) {
   .desktop\:m-0 {
     margin: 0px;
@@ -1997,6 +2004,11 @@ details[open]::after {
   .desktop\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .desktop\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
 
   .desktop\:mr-16 {
