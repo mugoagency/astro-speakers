@@ -125,6 +125,19 @@ ul {
   font-size: 1.4rem;
 }
 
+.btn-signedIn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 9px !important;
+}
+
+.btn-signedIn--img {
+  width: 31px;
+  height: 31px;
+}
+
 .btn-primary {
   background-color: var(--primary-color) !important;
 }
