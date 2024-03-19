@@ -716,6 +716,11 @@ video {
   margin-bottom: 6rem;
 }
 
+.my-64 {
+  margin-top: 16rem;
+  margin-bottom: 16rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -766,6 +771,10 @@ video {
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mb-12 {
@@ -903,6 +912,14 @@ video {
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-sixtythree {
+  width: 63%;
+}
+
+.w-fiftyseven {
+  width: 57%;
 }
 
 .max-w-mobile {

@@ -55,6 +55,8 @@ module.exports = {
         HeartMobile: "35px",
         TabletCard: "45%",
         fit: "fit-content",
+        sixtythree: "63%",
+        fiftyseven: "57%",
       },
 
       maxWidth: {
