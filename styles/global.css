@@ -721,11 +721,6 @@ video {
   margin-bottom: 6rem;
 }
 
-.my-64 {
-  margin-top: 16rem;
-  margin-bottom: 16rem;
-}
-
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -917,14 +912,6 @@ video {
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.w-sixtythree {
-  width: 63%;
-}
-
-.w-fiftyseven {
-  width: 57%;
 }
 
 .w-ninety {
@@ -1696,12 +1683,16 @@ details[open]::after {
     width: 16.666667%;
   }
 
-  .sm\:w-5\/12 {
-    width: 41.666667%;
-  }
-
   .sm\:w-8\/12 {
     width: 66.666667%;
+  }
+
+  .sm\:w-10\/12 {
+    width: 83.333333%;
+  }
+
+  .sm\:w-full {
+    width: 100%;
   }
 
   .sm\:max-w-full {
@@ -1739,6 +1730,11 @@ details[open]::after {
   .md\:my-24 {
     margin-top: 6rem;
     margin-bottom: 6rem;
+  }
+
+  .md\:my-64 {
+    margin-top: 16rem;
+    margin-bottom: 16rem;
   }
 
   .md\:mr-0 {
@@ -2069,12 +2065,24 @@ details[open]::after {
     width: 33.333333%;
   }
 
+  .desktop\:w-7\/12 {
+    width: 58.333333%;
+  }
+
   .desktop\:w-3\.5\/12 {
     width: 28.5%;
   }
 
   .desktop\:w-CardWidthDesktop {
     width: 31.8%;
+  }
+
+  .desktop\:w-sixtythree {
+    width: 63%;
+  }
+
+  .desktop\:w-fiftyseven {
+    width: 57%;
   }
 
   .desktop\:flex-nowrap {
