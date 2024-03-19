@@ -706,6 +706,11 @@ video {
   margin-bottom: 0px;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -920,6 +925,10 @@ video {
 
 .w-fiftyseven {
   width: 57%;
+}
+
+.w-ninety {
+  width: 90%;
 }
 
 .max-w-mobile {
@@ -1663,6 +1672,10 @@ details[open]::after {
 }
 
 @media (min-width: 640px) {
+  .sm\:m-8 {
+    margin: 2rem;
+  }
+
   .sm\:mr-32 {
     margin-right: 8rem;
   }

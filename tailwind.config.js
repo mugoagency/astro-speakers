@@ -57,6 +57,7 @@ module.exports = {
         fit: "fit-content",
         sixtythree: "63%",
         fiftyseven: "57%",
+        ninety: "90%",
       },
 
       maxWidth: {
