@@ -1145,6 +1145,10 @@ video {
   background-image: url('../images/Hero-About-Mobile.png');
 }
 
+.bg-hero-contact-pattern-mobile {
+  background-image: url('../images/Hero-Contact-Mobile.png');
+}
+
 .from-lightblue {
   --tw-gradient-from: #85C1FC;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(133, 193, 252, 0));
@@ -2006,6 +2010,10 @@ details[open]::after {
 
   .ipad\:bg-hero-about-pattern {
     background-image: url('../images/Hero-About.png');
+  }
+
+  .ipad\:bg-hero-contact-pattern {
+    background-image: url('../images/Hero-Contact.png');
   }
 
   .ipad\:px-12 {

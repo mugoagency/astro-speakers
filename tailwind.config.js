@@ -38,6 +38,9 @@ module.exports = {
         "hero-pattern-mobile": "url('../images/MobileEarth.png')",
         "hero-about-pattern": "url('../images/Hero-About.png')",
         "hero-about-pattern-mobile": "url('../images/Hero-About-Mobile.png')",
+        "hero-contact-pattern": "url('../images/Hero-Contact.png')",
+        "hero-contact-pattern-mobile":
+          "url('../images/Hero-Contact-Mobile.png')",
       },
 
       backgroundSize: {
