@@ -54,6 +54,7 @@ module.exports = {
       width: {
         "3.5/12": "28.5%",
         "8.5/12": "70.0%",
+        "5.5/12": "45%",
         CardWidthDesktop: "31.8%",
         HeartMobile: "35px",
         TabletCard: "45%",
