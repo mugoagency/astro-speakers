@@ -114,22 +114,28 @@
                     class="flex items-center flex-col md:flex-row justify-between gap-4 md:gap-8 ipad:gap-12 desktop:gap-16"
                   >
                     <div class="flex flex-col gap-4 w-full">
-                      <label class="text-grey text-2xl">First Name</label>
+                      <label class="text-grey text-2xl" for="FirstName"
+                        >First Name</label
+                      >
                       <input
                         type="text"
                         class="p-8 pr-0 pl-4 md:pl-8 w-full text-bigger-input rounded-2xl outline-none"
-                        id="txtPlaces"
+                        id="FirstName"
+                        name="FirstName"
                         placeholder="Enter First Name"
                         value=""
                         autocomplete="off"
                       />
                     </div>
                     <div class="flex flex-col gap-4 w-full">
-                      <label class="text-grey text-2xl">Last Name</label>
+                      <label class="text-grey text-2xl" for="LastName"
+                        >Last Name</label
+                      >
                       <input
                         type="text"
                         class="p-8 pr-0 pl-4 md:pl-8 w-full text-bigger-input rounded-2xl outline-none"
-                        id="txtPlaces"
+                        id="LastName"
+                        name="LastName"
                         placeholder="Enter Last Name"
                         value=""
                         autocomplete="off"
@@ -139,11 +145,14 @@
                 </div>
 
                 <div class="flex flex-col w-full mt-12">
-                  <label class="text-grey text-2xl mb-4">Email Address</label>
+                  <label class="text-grey text-2xl mb-4" for="Email"
+                    >Email Address</label
+                  >
                   <input
                     type="email"
                     class="p-8 pr-0 pl-4 md:pl-8 md:w-full text-bigger-input rounded-2xl outline-none"
-                    id="txtPlaces"
+                    id="Email"
+                    name="Email"
                     placeholder="Enter Email Address"
                     value=""
                     autocomplete="off"
@@ -151,13 +160,14 @@
                 </div>
 
                 <div class="flex flex-col w-full mt-12">
-                  <label class="text-grey text-2xl mb-4"
+                  <label class="text-grey text-2xl mb-4" for="Discuss"
                     >What Would You Like To Discuss?</label
                   >
                   <input
                     type="text"
                     class="p-8 pr-0 pl-4 md:pl-8 md:w-full text-bigger-input rounded-2xl outline-none"
-                    id="txtPlaces"
+                    id="Discuss"
+                    name="Discuss"
                     placeholder="Speaking Opportunities"
                     value=""
                     autocomplete="off"
@@ -165,22 +175,24 @@
                 </div>
 
                 <div class="flex flex-col w-full mt-12">
-                  <label class="text-grey text-2xl mb-4"
+                  <label class="text-grey text-2xl mb-4" for="Message"
                     >Add Your Message</label
                   >
-                  <input
+                  <textarea
+                    rows="5"
                     type="text"
                     class="p-8 pr-0 pl-4 md:pl-8 md:w-full text-bigger-input rounded-2xl outline-none"
-                    id="txtPlaces"
+                    id="Message"
+                    name="Message"
                     placeholder="Your Message Here..."
                     value=""
                     autocomplete="off"
-                  />
+                  ></textarea>
                 </div>
 
                 <div class="flex flex-col w-full mt-12">
                   <input
-                    type="button"
+                    type="submit"
                     class="btn btn-primary w-auto inline-block my-0 mx-auto"
                     id="ContactSubmit"
                     value="Send Message"
