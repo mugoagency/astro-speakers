@@ -272,6 +272,6 @@ details[open]::after {
 
 /* Input Text Size Helper */
 .text-bigger-input {
-  font-size: 2rem !important;
+  font-size: 1.8rem !important;
   padding: 1.5rem 2rem !important;
 }
