@@ -2033,6 +2033,10 @@ details[open]::after {
     width: 41.666667%;
   }
 
+  .ipad\:w-7\/12 {
+    width: 58.333333%;
+  }
+
   .ipad\:flex-row {
     flex-direction: row;
   }
