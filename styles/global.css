@@ -1868,6 +1868,10 @@ details[open]::after {
     gap: 1.5rem;
   }
 
+  .md\:gap-8 {
+    gap: 2rem;
+  }
+
   .md\:gap-12 {
     gap: 3rem;
   }
@@ -2015,6 +2019,10 @@ details[open]::after {
     gap: 0.5rem;
   }
 
+  .ipad\:gap-12 {
+    gap: 3rem;
+  }
+
   .ipad\:bg-hero-pattern {
     background-image: url('../images/Earth.png');
   }
@@ -2092,10 +2100,6 @@ details[open]::after {
     width: 58.333333%;
   }
 
-  .desktop\:w-full {
-    width: 100%;
-  }
-
   .desktop\:w-3\.5\/12 {
     width: 28.5%;
   }
@@ -2122,6 +2126,10 @@ details[open]::after {
 
   .desktop\:flex-nowrap {
     flex-wrap: nowrap;
+  }
+
+  .desktop\:gap-16 {
+    gap: 4rem;
   }
 
   .desktop\:px-0 {
