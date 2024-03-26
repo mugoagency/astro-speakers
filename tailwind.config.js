@@ -62,6 +62,7 @@ module.exports = {
         sixtythree: "63%",
         fiftyseven: "57%",
         ninety: "90%",
+        fiftyfive: "55%",
       },
 
       maxWidth: {

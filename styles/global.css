@@ -769,6 +769,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -1662,6 +1666,13 @@ details[open]::after {
   transform: rotate(180deg);
 }
 
+/* Input Text Size Helper */
+
+.text-bigger-input {
+  font-size: 2rem !important;
+  padding: 1.5rem 2rem !important;
+}
+
 @media (min-width: 640px) {
   .sm\:m-8 {
     margin: 2rem;
@@ -2081,6 +2092,10 @@ details[open]::after {
     width: 58.333333%;
   }
 
+  .desktop\:w-full {
+    width: 100%;
+  }
+
   .desktop\:w-3\.5\/12 {
     width: 28.5%;
   }
@@ -2099,6 +2114,10 @@ details[open]::after {
 
   .desktop\:w-fiftyseven {
     width: 57%;
+  }
+
+  .desktop\:w-fiftyfive {
+    width: 55%;
   }
 
   .desktop\:flex-nowrap {
