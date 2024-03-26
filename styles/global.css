@@ -1516,7 +1516,7 @@ ul {
   border-radius: 50rem;
   cursor: pointer;
   transition: all 0.3s;
-  font-size: 1.4rem;
+  font-size: 1.4rem !important;
 }
 
 .btn-signedIn {
