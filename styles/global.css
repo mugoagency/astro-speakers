@@ -1691,7 +1691,7 @@ details[open]::after {
   padding: 1.5rem 2rem !important;
 }
 
-/* Join Now Form - Yes & No Buttons Styling */
+/* Join Now Form - Yes & No Buttons Styling & Active Transition */
 
 .form__radio-input {
   display: none;
