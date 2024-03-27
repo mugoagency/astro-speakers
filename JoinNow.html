@@ -161,7 +161,7 @@
                 </div>
 
                 <div class="flex flex-col w-full mt-12">
-                  <label class="text-grey text-2xl mb-4" for="Email"
+                  <label class="text-grey text-2xl mb-4" for="Password"
                     >Password</label
                   >
                   <input
@@ -176,34 +176,36 @@
                 </div>
 
                 <div class="flex flex-col w-full mt-12">
-                  <label class="text-grey text-2xl mb-4" for="Email"
+                  <label class="text-grey text-2xl mb-6"
                     >Feature Your Profile On Astro Speakers?</label
                   >
 
-                  <div class="flex gap-12">
-                    <div class="flex">
+                  <div class="form__group flex gap-24 pl-8">
+                    <div class="form__radio-group">
                       <input
-                        type="checkbox"
-                        class="checkbox-round"
+                        type="radio"
+                        class="form__radio-input"
                         id="Yes"
-                        name="Yes"
-                        value=""
+                        name="size"
                       />
-                      <label class="text-white text-2xl pl-8" for="Email"
-                        >Yes</label
+                      <label
+                        for="Yes"
+                        class="form__radio-label text-white text-2xl pl-8"
+                        ><span class="form__radio-button"></span>Yes</label
                       >
                     </div>
 
-                    <div class="flex">
+                    <div class="form__radio-group">
                       <input
-                        type="checkbox"
-                        class="checkbox-round"
+                        type="radio"
+                        class="form__radio-input"
                         id="No"
-                        name="No"
-                        value="No"
+                        name="size"
                       />
-                      <label class="text-white text-2xl pl-8" for="Email"
-                        >No</label
+                      <label
+                        for="No"
+                        class="form__radio-label text-white text-2xl pl-8"
+                        ><span class="form__radio-button"></span>No</label
                       >
                     </div>
                   </div>

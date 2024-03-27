@@ -276,16 +276,44 @@ details[open]::after {
   padding: 1.5rem 2rem !important;
 }
 
-.checkbox-round {
-  width: 1em !important;
-  height: 1em !important;
-  padding: 1rem;
-  background-color: transparent !important;
-  border-radius: 50% !important;
-  vertical-align: middle !important;
-  border: 1px solid #fff !important;
-  appearance: none !important;
-  -webkit-appearance: none !important;
-  outline: none !important;
-  cursor: pointer !important;
+/* Join Now Form - Yes & No Buttons Styling */
+
+.form__radio-input {
+  display: none;
+}
+
+.form__radio-label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.form__radio-button {
+  height: 3rem;
+  width: 3rem;
+  border: 0.2rem solid white;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: -2rem;
+  top: -0.5rem;
+}
+
+.form__radio-button::after {
+  content: "";
+  display: block;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  transition: opacity 0.2s;
+  opacity: 0 !important;
+}
+
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1 !important;
 }
