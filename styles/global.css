@@ -1687,6 +1687,21 @@ details[open]::after {
   padding: 1.5rem 2rem !important;
 }
 
+.checkbox-round {
+  width: 1em !important;
+  height: 1em !important;
+  padding: 1rem;
+  background-color: transparent !important;
+  border-radius: 50% !important;
+  vertical-align: middle !important;
+  border: 1px solid #fff !important;
+  -moz-appearance: none !important;
+       appearance: none !important;
+  -webkit-appearance: none !important;
+  outline: none !important;
+  cursor: pointer !important;
+}
+
 @media (min-width: 640px) {
   .sm\:m-8 {
     margin: 2rem;

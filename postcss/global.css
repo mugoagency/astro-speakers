@@ -275,3 +275,17 @@ details[open]::after {
   font-size: 1.8rem !important;
   padding: 1.5rem 2rem !important;
 }
+
+.checkbox-round {
+  width: 1em !important;
+  height: 1em !important;
+  padding: 1rem;
+  background-color: transparent !important;
+  border-radius: 50% !important;
+  vertical-align: middle !important;
+  border: 1px solid #fff !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  outline: none !important;
+  cursor: pointer !important;
+}
