@@ -1864,8 +1864,8 @@ details[open]::after {
     width: 8rem;
   }
 
-  .md\:w-auto {
-    width: auto;
+  .md\:w-3\/12 {
+    width: 25%;
   }
 
   .md\:w-5\/12 {
